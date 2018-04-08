@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>basic - geo-library 2.8.3-2.10 API - com.github.tsingjyujing.geo.basic</title>
+          <meta name="description" content="basic - geo - library 2.8.3 - 2.10 API - com.github.tsingjyujing.geo.basic" />
+          <meta name="keywords" content="basic geo library 2.8.3 2.10 API com.github.tsingjyujing.geo.basic" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.github.tsingjyujing.geo.basic.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.tsingjyujing">tsingjyujing</a>.<a href="../package.html" class="extype" name="com.github.tsingjyujing.geo">geo</a></p>
+        <h1>basic</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">basic</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.github.tsingjyujing.geo.basic.IGeoLine" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IGeoLineextendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONable"></a>
+      <a id="IGeoLine:IGeoLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IGeoLine.html"><span class="name">IGeoLine</span></a><span class="result"> extends <a href="operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Geodesic line on 2d-sphere described by two points of <code>IGeoPoint</code>
+</p>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IGeoPointextendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithSerializable"></a>
+      <a id="IGeoPoint:IGeoPoint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IGeoPoint.html"><span class="name">IGeoPoint</span></a><span class="result"> extends <a href="operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Any type which can get longitude and latitude (on earth)
+</p>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPointSet" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IGeoPointSet[T&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsIterable[T]withGeoJSONable"></a>
+      <a id="IGeoPointSet[T&lt;:IGeoPoint]:IGeoPointSet[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IGeoPointSet.html"><span class="name">IGeoPointSet</span></a><span class="tparams">[<span name="T">T &lt;: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>]</span><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPointSet.T">T</span>] with <a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A point set to query points easily
+</p>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IHashableGeoBlockextendsIGeoPointwithIHashedIndex[Long]"></a>
+      <a id="IHashableGeoBlock:IHashableGeoBlock"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IHashableGeoBlock.html"><span class="name">IHashableGeoBlock</span></a><span class="result"> extends <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a> with <a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a>[<span class="extype" name="scala.Long">Long</span>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Squared hash of geo
+Which geo point can get an Long index value and get hashed.</p>
+    </li><li name="com.github.tsingjyujing.geo.basic.IVector2" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IVector2extendsIVectorwithInnerProductable[com.github.tsingjyujing.geo.basic.IVector2]withAngleable[com.github.tsingjyujing.geo.basic.IVector2]withDistanceMeasurable[com.github.tsingjyujing.geo.basic.IVector2]withAddable[com.github.tsingjyujing.geo.basic.IVector2]"></a>
+      <a id="IVector2:IVector2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IVector2.html"><span class="name">IVector2</span></a><span class="result"> extends <a href="operations/IVector.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IVector">IVector</a> with <a href="operations/InnerProductable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.InnerProductable">InnerProductable</a>[<a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a>] with <a href="operations/Angleable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.Angleable">Angleable</a>[<a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a>] with <a href="operations/DistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.DistanceMeasurable">DistanceMeasurable</a>[<a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a>] with <a href="operations/Addable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.Addable">Addable</a>[<a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">vector in 2d Euclid space
+</p>
+    </li><li name="com.github.tsingjyujing.geo.basic.IVector3" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IVector3extendsIVectorwithInnerProductable[com.github.tsingjyujing.geo.basic.IVector3]withAngleable[com.github.tsingjyujing.geo.basic.IVector3]withDistanceMeasurable[com.github.tsingjyujing.geo.basic.IVector3]withOuterProductable[com.github.tsingjyujing.geo.basic.IVector3,com.github.tsingjyujing.geo.basic.IVector3]withAddable[com.github.tsingjyujing.geo.basic.IVector3]"></a>
+      <a id="IVector3:IVector3"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IVector3.html"><span class="name">IVector3</span></a><span class="result"> extends <a href="operations/IVector.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IVector">IVector</a> with <a href="operations/InnerProductable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.InnerProductable">InnerProductable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>] with <a href="operations/Angleable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.Angleable">Angleable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>] with <a href="operations/DistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.DistanceMeasurable">DistanceMeasurable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>] with <a href="operations/OuterProductable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.OuterProductable">OuterProductable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>, <a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>] with <a href="operations/Addable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.Addable">Addable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">vector in 2d Euclid space
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.github.tsingjyujing.geo.basic.IGeoPoint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IGeoPoint"></a>
+      <a id="IGeoPoint:IGeoPoint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IGeoPoint$.html"><span class="name">IGeoPoint</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IHashableGeoBlock"></a>
+      <a id="IHashableGeoBlock:IHashableGeoBlock"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IHashableGeoBlock$.html"><span class="name">IHashableGeoBlock</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.github.tsingjyujing.geo.basic.IVector2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IVector2"></a>
+      <a id="IVector2:IVector2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IVector2$.html"><span class="name">IVector2</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="com.github.tsingjyujing.geo.basic.IVector3" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IVector3"></a>
+      <a id="IVector3:IVector3"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IVector3$.html"><span class="name">IVector3</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="com.github.tsingjyujing.geo.basic.operations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="operations"></a>
+      <a id="operations:operations"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="operations/package.html"><span class="name">operations</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="com.github.tsingjyujing.geo.basic.timeseries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="timeseries"></a>
+      <a id="timeseries:timeseries"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="timeseries/package.html"><span class="name">timeseries</span></a>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+    </body>
+      </html>

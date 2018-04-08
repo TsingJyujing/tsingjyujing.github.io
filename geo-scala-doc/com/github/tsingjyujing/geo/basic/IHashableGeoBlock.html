@@ -1,0 +1,903 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>IHashableGeoBlock - geo-library 2.8.3-2.10 API - com.github.tsingjyujing.geo.basic.IHashableGeoBlock</title>
+          <meta name="description" content="IHashableGeoBlock - geo - library 2.8.3 - 2.10 API - com.github.tsingjyujing.geo.basic.IHashableGeoBlock" />
+          <meta name="keywords" content="IHashableGeoBlock geo library 2.8.3 2.10 API com.github.tsingjyujing.geo.basic.IHashableGeoBlock" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.github.tsingjyujing.geo.basic.IHashableGeoBlock';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="IHashableGeoBlock$.html" title="Go to companion"><img src="../../../../../lib/trait_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.tsingjyujing">tsingjyujing</a>.<a href="../package.html" class="extype" name="com.github.tsingjyujing.geo">geo</a>.<a href="package.html" class="extype" name="com.github.tsingjyujing.geo.basic">basic</a></p>
+        <h1><a href="IHashableGeoBlock$.html" title="Go to companion">IHashableGeoBlock</a></h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">IHashableGeoBlock</span><span class="result"> extends <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a> with <a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a>[<span class="extype" name="scala.Long">Long</span>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Squared hash of geo
+Which geo point can get an Long index value and get hashed.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a>[<span class="extype" name="scala.Long">Long</span>], <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a>, <a href="operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+          <span class="toggle">Known Subclasses</span>
+          <div class="subClasses hiddenContent"><a href="../element/GeoPointTree.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTree">GeoPointTree</a>, <a href="../element/immutable/HashedGeoBlock.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable.HashedGeoBlock">HashedGeoBlock</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock"><span>IHashableGeoBlock</span></li><li class="in" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex"><span>IHashedIndex</span></li><li class="in" name="com.github.tsingjyujing.geo.basic.IGeoPoint"><span>IGeoPoint</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable"><span>GeoJSONable</span></li><li class="in" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable"><span>GeoDistanceMeasurable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getGeoHashAccuracy" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="getGeoHashAccuracy:Long"></a>
+      <a id="getGeoHashAccuracy:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getGeoHashAccuracy</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Accuracy to devide earth into N*N parts
+</p><div class="fullcomment"><div class="comment cmt"><p>Accuracy to devide earth into N*N parts
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex#getIndexCode" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="getIndexCode:T"></a>
+      <a id="getIndexCode:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIndexCode</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get a unique indexCode as type T
+</p><div class="fullcomment"><div class="comment cmt"><p>Get a unique indexCode as type T
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#+" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="+(x:com.github.tsingjyujing.geo.basic.IVector2):com.github.tsingjyujing.geo.basic.IGeoPoint"></a>
+      <a id="+(IVector2):IGeoPoint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus" class="name">+</span><span class="params">(<span name="x">x: <a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a></span>)</span><span class="result">: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#-" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="-(x:com.github.tsingjyujing.geo.basic.IGeoPoint):com.github.tsingjyujing.geo.basic.IVector2"></a>
+      <a id="-(IGeoPoint):IVector2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus" class="name">-</span><span class="params">(<span name="x">x: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#-" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="-(x:com.github.tsingjyujing.geo.basic.IVector2):com.github.tsingjyujing.geo.basic.IGeoPoint"></a>
+      <a id="-(IVector2):IGeoPoint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus" class="name">-</span><span class="params">(<span name="x">x: <a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a></span>)</span><span class="result">: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#circumradius" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="circumradius:Double"></a>
+      <a id="circumradius:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">circumradius</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get a spherical crown to hash block
+</p>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(o:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="o">o: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Avoid duplication in Set or key of the Map
+</p><div class="fullcomment"><div class="comment cmt"><p>Avoid duplication in Set or key of the Map
+</p></div><dl class="paramcmts block"><dt class="param">o</dt><dd class="cmt"><p>object to compare</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock">IHashableGeoBlock</a> → <a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#geoBox" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="geoBox:com.github.tsingjyujing.geo.element.GeoBox"></a>
+      <a id="geoBox:GeoBox"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">geoBox</span><span class="result">: <a href="../element/GeoBox.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoBox">GeoBox</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get bound box of this block
+</p>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#geoTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="geoTo(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Double"></a>
+      <a id="geoTo(IGeoPoint):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">geoTo</span><span class="params">(<span name="point">point: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get distance from this to point or point to this (should be same)
+</p><div class="fullcomment"><div class="comment cmt"><p>Get distance from this to point or point to this (should be same)
+</p></div><dl class="paramcmts block"><dt class="param">point</dt><dd class="cmt"><p>geo point</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a> → <a href="operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getBoundaryPoints" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getBoundaryPoints(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Iterable[com.github.tsingjyujing.geo.basic.IGeoPoint]"></a>
+      <a id="getBoundaryPoints(IGeoPoint):Iterable[IGeoPoint]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getBoundaryPoints</span><span class="params">(<span name="point">point: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get points on boundary maybe the min/max distance
+</p><div class="fullcomment"><div class="comment cmt"><p>Get points on boundary maybe the min/max distance
+</p></div><dl class="paramcmts block"><dt class="param">point</dt><dd class="cmt"><p>reference points</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getCenterPoint" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getCenterPoint:com.github.tsingjyujing.geo.basic.IGeoPoint"></a>
+      <a id="getCenterPoint:IGeoPoint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCenterPoint</span><span class="result">: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get center point of the hash block
+</p><div class="fullcomment"><div class="comment cmt"><p>Get center point of the hash block
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getIndexCodeTuple" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getIndexCodeTuple:(Long,Long)"></a>
+      <a id="getIndexCodeTuple:(Long,Long)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIndexCodeTuple</span><span class="result">: (<span class="extype" name="scala.Long">Long</span>, <span class="extype" name="scala.Long">Long</span>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">decompose code tuple from code</p><div class="fullcomment"><div class="comment cmt"><p>decompose code tuple from code</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getLatitude" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLatitude:Double"></a>
+      <a id="getLatitude:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLatitude</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get latitude recommended in WGS84 format
+</p><div class="fullcomment"><div class="comment cmt"><p>Get latitude recommended in WGS84 format
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Latitude in degree
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock">IHashableGeoBlock</a> → <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getLatitudeTuple" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLatitudeTuple:Long"></a>
+      <a id="getLatitudeTuple:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLatitudeTuple</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get latitude part of decomposed code</p><div class="fullcomment"><div class="comment cmt"><p>Get latitude part of decomposed code</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getLongitude" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLongitude:Double"></a>
+      <a id="getLongitude:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLongitude</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get longitude recommended in WGS84 format
+</p><div class="fullcomment"><div class="comment cmt"><p>Get longitude recommended in WGS84 format
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Longitude in degree
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock">IHashableGeoBlock</a> → <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getLongitudeTuple" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLongitudeTuple:Long"></a>
+      <a id="getLongitudeTuple:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLongitudeTuple</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get longitude part of decomposed code</p><div class="fullcomment"><div class="comment cmt"><p>Get longitude part of decomposed code</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getMaxDistance" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMaxDistance(x:com.github.tsingjyujing.geo.basic.IGeoPoint):Double"></a>
+      <a id="getMaxDistance(IGeoPoint):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMaxDistance</span><span class="params">(<span name="x">x: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get max distance from block to point
+</p><div class="fullcomment"><div class="comment cmt"><p>get max distance from block to point
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getMaxDistance" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMaxDistance(x:com.github.tsingjyujing.geo.basic.IHashableGeoBlock):Double"></a>
+      <a id="getMaxDistance(IHashableGeoBlock):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMaxDistance</span><span class="params">(<span name="x">x: <a href="" class="extype" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock">IHashableGeoBlock</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get max distance from block to this block
+</p><div class="fullcomment"><div class="comment cmt"><p>Get max distance from block to this block
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>block info</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getMinDistance" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMinDistance(x:com.github.tsingjyujing.geo.basic.IGeoPoint):Double"></a>
+      <a id="getMinDistance(IGeoPoint):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMinDistance</span><span class="params">(<span name="x">x: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get min distance from block to point</p><div class="fullcomment"><div class="comment cmt"><p>get min distance from block to point</p><p>if point in block: --&gt; 0
+else:
+if point out of circumradius --&gt; distanceToCenter - circumradius
+else --&gt; calculate for each boundary point
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#getMinDistance" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMinDistance(x:com.github.tsingjyujing.geo.basic.IHashableGeoBlock):Double"></a>
+      <a id="getMinDistance(IHashableGeoBlock):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMinDistance</span><span class="params">(<span name="x">x: <a href="" class="extype" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock">IHashableGeoBlock</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get min distance from block to this block
+</p><div class="fullcomment"><div class="comment cmt"><p>Get min distance from block to this block
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>block info</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Create a hashCode to accelerate operations in HashSet or HashMap ect.</p><div class="fullcomment"><div class="comment cmt"><p>Create a hashCode to accelerate operations in HashSet or HashMap ect.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock">IHashableGeoBlock</a> → <a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#inradius" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="inradius:Double"></a>
+      <a id="inradius:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inradius</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get an inner circle in hash block</p><div class="fullcomment"><div class="comment cmt"><p>Get an inner circle in hash block</p><p>**For why we use this design:**
+Get an inradius less than closedFormInradius to solve the value error of IEEE Float
+</p></div></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex#isEqual" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isEqual(x:com.github.tsingjyujing.geo.basic.operations.IHashedIndex[T]):Boolean"></a>
+      <a id="isEqual(IHashedIndex[Long]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEqual</span><span class="params">(<span name="x">x: <a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a>[<span class="extype" name="scala.Long">Long</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">isEqual function
+</p><div class="fullcomment"><div class="comment cmt"><p>isEqual function
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock#toGeoBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toGeoBox:com.github.tsingjyujing.geo.element.GeoBox"></a>
+      <a id="toGeoBox:GeoBox"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGeoBox</span><span class="result">: <a href="../element/GeoBox.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoBox">GeoBox</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get boundary box of hash block
+</p><div class="fullcomment"><div class="comment cmt"><p>Get boundary box of hash block
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#toGeoJSON" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toGeoJSON:scala.util.parsing.json.JSONObject"></a>
+      <a id="toGeoJSON:JSONObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGeoJSON</span><span class="result">: <span class="extype" name="scala.util.parsing.json.JSONObject">JSONObject</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get scala original JSON object,
+JSON object deprecated in Scala 2.</p><div class="fullcomment"><div class="comment cmt"><p>Get scala original JSON object,
+JSON object deprecated in Scala 2.12 but still using in 2.10
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a> → <a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable#toGeoJSONString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toGeoJSONString:String"></a>
+      <a id="toGeoJSONString:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGeoJSONString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#toIVector2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toIVector2:com.github.tsingjyujing.geo.basic.IVector2"></a>
+      <a id="toIVector2:IVector2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toIVector2</span><span class="result">: <a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get Mercator projection potision as vector2
+</p><div class="fullcomment"><div class="comment cmt"><p>Get Mercator projection potision as vector2
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#toIVector3" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toIVector3:com.github.tsingjyujing.geo.basic.IVector3"></a>
+      <a id="toIVector3:IVector3"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toIVector3</span><span class="result">: <a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get vector3 in R3 on 2d sphere
+</p><div class="fullcomment"><div class="comment cmt"><p>Get vector3 in R3 on 2d sphere
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#verifyLatitude" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="verifyLatitude:Unit"></a>
+      <a id="verifyLatitude:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">verifyLatitude</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Verify is latitude value is legal</p><div class="fullcomment"><div class="comment cmt"><p>Verify is latitude value is legal</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="scala.this.throws.&lt;init&gt;$default$1[AssertionError]">...</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt">AssertionError<p>verify failed
+</p></span></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#verifyLongitude" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="verifyLongitude:Unit"></a>
+      <a id="verifyLongitude:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">verifyLongitude</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Verify is longitude value is legal</p><div class="fullcomment"><div class="comment cmt"><p>Verify is longitude value is legal</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="scala.this.throws.&lt;init&gt;$default$1[AssertionError]">...</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt">AssertionError<p>verify failed
+</p></span></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#verifyValues" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="verifyValues:Unit"></a>
+      <a id="verifyValues:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">verifyValues</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Verify is latitude &amp; longitude values are legal</p><div class="fullcomment"><div class="comment cmt"><p>Verify is latitude &amp; longitude values are legal</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="scala.this.throws.&lt;init&gt;$default$1[AssertionError]">...</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt">AssertionError<p>verify failed
+</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">
+              <h3>Inherited from <a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a>[<span class="extype" name="scala.Long">Long</span>]</h3>
+            </div><div class="parent" name="com.github.tsingjyujing.geo.basic.IGeoPoint">
+              <h3>Inherited from <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">
+              <h3>Inherited from <a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></h3>
+            </div><div class="parent" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">
+              <h3>Inherited from <a href="operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+    </body>
+      </html>
