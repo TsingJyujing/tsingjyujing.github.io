@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>GeoPointTimeSeries - geo-library 2.8.3-2.10 API - com.github.tsingjyujing.geo.element.GeoPointTimeSeries</title>
-          <meta name="description" content="GeoPointTimeSeries - geo - library 2.8.3 - 2.10 API - com.github.tsingjyujing.geo.element.GeoPointTimeSeries" />
-          <meta name="keywords" content="GeoPointTimeSeries geo library 2.8.3 2.10 API com.github.tsingjyujing.geo.element.GeoPointTimeSeries" />
+          <title>GeoPointTimeSeries - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.element.GeoPointTimeSeries</title>
+          <meta name="description" content="GeoPointTimeSeries - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.element.GeoPointTimeSeries" />
+          <meta name="keywords" content="GeoPointTimeSeries geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.element.GeoPointTimeSeries" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -322,22 +322,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries#sparsifyGPS" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sparsifyGPS(gpsArray:com.github.tsingjyujing.geo.element.GeoPointTimeSeries,sparsityParam:Double,sparsitySearchParam:Int):com.github.tsingjyujing.geo.element.GeoPointTimeSeries"></a>
-      <a id="sparsifyGPS(GeoPointTimeSeries,Double,Int):GeoPointTimeSeries"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">sparsifyGPS</span><span class="params">(<span name="gpsArray">gpsArray: <a href="GeoPointTimeSeries.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries">GeoPointTimeSeries</a></span>, <span name="sparsityParam">sparsityParam: <span class="extype" name="scala.Double">Double</span></span>, <span name="sparsitySearchParam">sparsitySearchParam: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="GeoPointTimeSeries.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries">GeoPointTimeSeries</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Get sparse points'
-</p><div class="fullcomment"><div class="comment cmt"><p>Get sparse points'
-</p></div><dl class="paramcmts block"><dt class="param">gpsArray</dt><dd class="cmt"><p>gps points</p></dd><dt class="param">sparsityParam</dt><dd class="cmt"><p>sparsity max distance to line</p></dd><dt class="param">sparsitySearchParam</dt><dd class="cmt"><p>how many points to search in range</p></dd><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries#sparsifyGPSIndexed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="sparsifyGPSIndexed(gpsArray:com.github.tsingjyujing.geo.element.GeoPointTimeSeries,sparsityParam:Double,sparsitySearchParam:Int):IndexedSeq[Int]"></a>
       <a id="sparsifyGPSIndexed(GeoPointTimeSeries,Double,Int):IndexedSeq[Int]"></a>
@@ -442,7 +426,48 @@
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries#removeStayPoints" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="removeStayPoints(gpsArray:com.github.tsingjyujing.geo.element.GeoPointTimeSeries,allowMinDistance:Double):IndexedSeq[Int]"></a>
+      <a id="removeStayPoints(GeoPointTimeSeries,Double):IndexedSeq[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: May cause some unknown bug about high frequency data.">removeStayPoints</span><span class="params">(<span name="gpsArray">gpsArray: <a href="GeoPointTimeSeries.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries">GeoPointTimeSeries</a></span>, <span name="allowMinDistance">allowMinDistance: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.005</span></span>)</span><span class="result">: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Remove stay points and get remain indexes
+</p><div class="fullcomment"><div class="comment cmt"><p>Remove stay points and get remain indexes
+</p></div><dl class="paramcmts block"><dt class="param">gpsArray</dt><dd class="cmt"><p>gps time series</p></dd><dt class="param">allowMinDistance</dt><dd class="cmt"><p>min distance allow to margin</p></dd><dt>returns</dt><dd class="cmt"><p>which points should remain after cleaning
+</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>May cause some unknown bug about high frequency data.</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries#sparsifyGPS" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sparsifyGPS(gpsArray:com.github.tsingjyujing.geo.element.GeoPointTimeSeries,sparsityParam:Double,sparsitySearchParam:Int):com.github.tsingjyujing.geo.element.GeoPointTimeSeries"></a>
+      <a id="sparsifyGPS(GeoPointTimeSeries,Double,Int):GeoPointTimeSeries"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: ">sparsifyGPS</span><span class="params">(<span name="gpsArray">gpsArray: <a href="GeoPointTimeSeries.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries">GeoPointTimeSeries</a></span>, <span name="sparsityParam">sparsityParam: <span class="extype" name="scala.Double">Double</span></span>, <span name="sparsitySearchParam">sparsitySearchParam: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="GeoPointTimeSeries.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries">GeoPointTimeSeries</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get sparse points'
+</p><div class="fullcomment"><div class="comment cmt"><p>Get sparse points'
+</p></div><dl class="paramcmts block"><dt class="param">gpsArray</dt><dd class="cmt"><p>gps points</p></dd><dt class="param">sparsityParam</dt><dd class="cmt"><p>sparsity max distance to line</p></dd><dt class="param">sparsitySearchParam</dt><dd class="cmt"><p>how many points to search in range</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">

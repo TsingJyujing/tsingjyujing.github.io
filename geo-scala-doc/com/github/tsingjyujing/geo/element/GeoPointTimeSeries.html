@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>GeoPointTimeSeries - geo-library 2.8.3-2.10 API - com.github.tsingjyujing.geo.element.GeoPointTimeSeries</title>
-          <meta name="description" content="GeoPointTimeSeries - geo - library 2.8.3 - 2.10 API - com.github.tsingjyujing.geo.element.GeoPointTimeSeries" />
-          <meta name="keywords" content="GeoPointTimeSeries geo library 2.8.3 2.10 API com.github.tsingjyujing.geo.element.GeoPointTimeSeries" />
+          <title>GeoPointTimeSeries - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.element.GeoPointTimeSeries</title>
+          <meta name="description" content="GeoPointTimeSeries - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.element.GeoPointTimeSeries" />
+          <meta name="keywords" content="GeoPointTimeSeries geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.element.GeoPointTimeSeries" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -384,6 +384,22 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>IterableLike → Equals</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries#cleanGpsData" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cleanGpsData(speedLimit:Double):com.github.tsingjyujing.geo.element.GeoPointTimeSeries"></a>
+      <a id="cleanGpsData(Double):GeoPointTimeSeries"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cleanGpsData</span><span class="params">(<span name="speedLimit">speedLimit: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries">GeoPointTimeSeries</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Clean gps data at 0,0 and use speed limit to clean jump points
+</p><div class="fullcomment"><div class="comment cmt"><p>Clean gps data at 0,0 and use speed limit to clean jump points
+</p></div><dl class="paramcmts block"><dt class="param">speedLimit</dt><dd class="cmt"><p>max speed allowed to appear, unit of speed = km/unit of time</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries#cleanOverSpeed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="cleanOverSpeed(speedLimit:Double):com.github.tsingjyujing.geo.element.GeoPointTimeSeries"></a>
       <a id="cleanOverSpeed(Double):GeoPointTimeSeries"></a>
@@ -396,9 +412,9 @@
         <span class="name">cleanOverSpeed</span><span class="params">(<span name="speedLimit">speedLimit: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries">GeoPointTimeSeries</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Clean overspeed data
-</p><div class="fullcomment"><div class="comment cmt"><p>Clean overspeed data
-</p></div><dl class="paramcmts block"><dt class="param">speedLimit</dt><dd class="cmt"><p>max speed allowed to appear</p></dd><dt>returns</dt><dd class="cmt"><p>
+      <p class="shortcomment cmt">Clean over speed data
+</p><div class="fullcomment"><div class="comment cmt"><p>Clean over speed data
+</p></div><dl class="paramcmts block"><dt class="param">speedLimit</dt><dd class="cmt"><p>max speed allowed to appear,  unit of speed = km/unit of time</p></dd><dt>returns</dt><dd class="cmt"><p>
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -992,9 +1008,9 @@
         <span class="name">isometricallyResample</span><span class="params">(<span name="marginDistance">marginDistance: <span class="extype" name="scala.Double">Double</span></span>, <span name="maxTolerance">maxTolerance: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">3.0</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTimeSeries">GeoPointTimeSeries</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">ResultType: Iterable[TimeElement[IGeoPoint]]
+      <p class="shortcomment cmt">ResultType: Iterable&lt;TimeElement&lt;IGeoPoint&gt;&gt;
 StatusType: (lastValidPoint:TimeElement[IGeoPoint])
-</p><div class="fullcomment"><div class="comment cmt"><p>ResultType: Iterable[TimeElement[IGeoPoint]]
+</p><div class="fullcomment"><div class="comment cmt"><p>ResultType: Iterable&lt;TimeElement&lt;IGeoPoint&gt;&gt;
 StatusType: (lastValidPoint:TimeElement[IGeoPoint])
 </p></div><dl class="paramcmts block"><dt class="param">marginDistance</dt><dd class="cmt"><p>standard margin distance</p></dd><dt class="param">maxTolerance</dt><dd class="cmt"><p>do resample if d&gt;maxTolerance*marginDistance</p></dd><dt>returns</dt><dd class="cmt"><p>
 </p></dd></dl></div>

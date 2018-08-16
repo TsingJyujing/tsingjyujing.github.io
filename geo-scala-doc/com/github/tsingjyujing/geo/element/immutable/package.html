@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>immutable - geo-library 2.8.3-2.10 API - com.github.tsingjyujing.geo.element.immutable</title>
-          <meta name="description" content="immutable - geo - library 2.8.3 - 2.10 API - com.github.tsingjyujing.geo.element.immutable" />
-          <meta name="keywords" content="immutable geo library 2.8.3 2.10 API com.github.tsingjyujing.geo.element.immutable" />
+          <title>immutable - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.element.immutable</title>
+          <meta name="description" content="immutable - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.element.immutable" />
+          <meta name="keywords" content="immutable geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.element.immutable" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -59,25 +59,39 @@
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="com.github.tsingjyujing.geo.element.immutable.GeoLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GeoLineextendsIGeoLinewithProductwithSerializable"></a>
+      <a id="GeoLineextendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithProductwithSerializable"></a>
       <a id="GeoLine:GeoLine"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GeoLine.html"><span class="name">GeoLine</span></a><span class="params">(<span name="pointStart">pointStart: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>, <span name="pointEnd">pointEnd: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result"> extends <a href="../../basic/IGeoLine.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoLine">IGeoLine</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="GeoLine.html"><span class="name">GeoLine</span></a><span class="params">(<span name="pointStart">pointStart: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>, <span name="pointEnd">pointEnd: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result"> extends <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Create a GeoLine object
+</p>
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GeoLineStringextendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithProductwithSerializable"></a>
+      <a id="GeoLineString:GeoLineString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GeoLineString.html"><span class="name">GeoLineString</span></a><span class="params">(<span name="points">points: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>]</span>)</span><span class="result"> extends <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Geo point line string
 </p>
     </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoPoint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GeoPointextendsIGeoPointwithProductwithSerializable"></a>
       <a id="GeoPoint:GeoPoint"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
@@ -91,7 +105,7 @@
       <a id="GeoPointValued[T]:GeoPointValued[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
@@ -105,7 +119,7 @@
       <a id="HashedGeoBlock:HashedGeoBlock"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
@@ -119,7 +133,7 @@
       <a id="TimeElement[+T]:TimeElement[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
@@ -133,7 +147,7 @@
       <a id="Vector2:Vector2"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
@@ -147,7 +161,7 @@
       <a id="Vector3:Vector3"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
@@ -163,7 +177,20 @@
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="com.github.tsingjyujing.geo.element.immutable.HashedGeoBlock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="com.github.tsingjyujing.geo.element.immutable.GeoPoint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GeoPoint"></a>
+      <a id="GeoPoint:GeoPoint"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GeoPoint$.html"><span class="name">GeoPoint</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.HashedGeoBlock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HashedGeoBlock"></a>
       <a id="HashedGeoBlock:HashedGeoBlock"></a>
       <h4 class="signature">

@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>VectorUtil - geo-library 2.8.3-2.10 API - com.github.tsingjyujing.geo.util.mathematical.VectorUtil</title>
-          <meta name="description" content="VectorUtil - geo - library 2.8.3 - 2.10 API - com.github.tsingjyujing.geo.util.mathematical.VectorUtil" />
-          <meta name="keywords" content="VectorUtil geo library 2.8.3 2.10 API com.github.tsingjyujing.geo.util.mathematical.VectorUtil" />
+          <title>VectorUtil - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.util.mathematical.VectorUtil</title>
+          <meta name="description" content="VectorUtil - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.util.mathematical.VectorUtil" />
+          <meta name="keywords" content="VectorUtil geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.util.mathematical.VectorUtil" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Common methods of vectors</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Common methods of vectors
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -266,6 +267,38 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.util.mathematical.VectorUtil#linearInterpolation2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="linearInterpolation2(v1:com.github.tsingjyujing.geo.basic.IVector2,v2:com.github.tsingjyujing.geo.basic.IVector2,ratios:TraversableOnce[Double]):TraversableOnce[com.github.tsingjyujing.geo.element.immutable.Vector2]"></a>
+      <a id="linearInterpolation2(IVector2,IVector2,TraversableOnce[Double]):TraversableOnce[Vector2]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">linearInterpolation2</span><span class="params">(<span name="v1">v1: <a href="../../basic/IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a></span>, <span name="v2">v2: <a href="../../basic/IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a></span>, <span name="ratios">ratios: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="../../element/immutable/Vector2.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable.Vector2">Vector2</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Interp vector2 with multi ratios
+</p><div class="fullcomment"><div class="comment cmt"><p>Interp vector2 with multi ratios
+</p></div><dl class="paramcmts block"><dt class="param">v1</dt><dd class="cmt"><p>vector 1</p></dd><dt class="param">v2</dt><dd class="cmt"><p>vector 2</p></dd><dt class="param">ratios</dt><dd class="cmt"><p>commonly should in range(0,1.0)</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.util.mathematical.VectorUtil#linearInterpolation2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="linearInterpolation2(v1:com.github.tsingjyujing.geo.basic.IVector2,v2:com.github.tsingjyujing.geo.basic.IVector2,ratio:Double):com.github.tsingjyujing.geo.element.immutable.Vector2"></a>
+      <a id="linearInterpolation2(IVector2,IVector2,Double):Vector2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">linearInterpolation2</span><span class="params">(<span name="v1">v1: <a href="../../basic/IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a></span>, <span name="v2">v2: <a href="../../basic/IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a></span>, <span name="ratio">ratio: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="../../element/immutable/Vector2.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable.Vector2">Vector2</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Interp vector2
+</p><div class="fullcomment"><div class="comment cmt"><p>Interp vector2
+</p></div><dl class="paramcmts block"><dt class="param">v1</dt><dd class="cmt"><p>vector 1</p></dd><dt class="param">v2</dt><dd class="cmt"><p>vector 2</p></dd><dt class="param">ratio</dt><dd class="cmt"><p>commonly should in range(0,1.0)</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -279,7 +312,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.github.tsingjyujing.geo.util.mathematical.VectorUtil#norm2Vector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.github.tsingjyujing.geo.util.mathematical.VectorUtil#norm2Vector" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="norm2Vector(vec:Array[Double],normLen:Double):Array[Double]"></a>
       <a id="norm2Vector(Array[Double],Double):Array[Double]"></a>
       <h4 class="signature">
@@ -291,7 +324,10 @@
         <span class="name">norm2Vector</span><span class="params">(<span name="vec">vec: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="normLen">normLen: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">1.0</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Get norm of an N-dimension vector described by Array[Double]
+</p><div class="fullcomment"><div class="comment cmt"><p>Get norm of an N-dimension vector described by Array[Double]
+</p></div><dl class="paramcmts block"><dt class="param">vec</dt><dd class="cmt"></dd><dt class="param">normLen</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -318,7 +354,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.github.tsingjyujing.geo.util.mathematical.VectorUtil#outerProduct" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.github.tsingjyujing.geo.util.mathematical.VectorUtil#outerProduct" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="outerProduct(v1:Array[Double],v2:Array[Double]):Array[Double]"></a>
       <a id="outerProduct(Array[Double],Array[Double]):Array[Double]"></a>
       <h4 class="signature">
@@ -330,7 +366,10 @@
         <span class="name">outerProduct</span><span class="params">(<span name="v1">v1: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>, <span name="v2">v2: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Get out product result of Vector3
+</p><div class="fullcomment"><div class="comment cmt"><p>Get out product result of Vector3
+</p></div><dl class="paramcmts block"><dt class="param">v1</dt><dd class="cmt"></dd><dt class="param">v2</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.util.mathematical.VectorUtil#sphereInterp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="sphereInterp(v1:com.github.tsingjyujing.geo.basic.IVector3,v2:com.github.tsingjyujing.geo.basic.IVector3,angleToV1Values:TraversableOnce[Double]):TraversableOnce[com.github.tsingjyujing.geo.basic.IVector3]"></a>
       <a id="sphereInterp(IVector3,IVector3,TraversableOnce[Double]):TraversableOnce[IVector3]"></a>
@@ -372,7 +411,9 @@
         <span class="name">sphereInterpFast</span><span class="params">(<span name="v1">v1: <a href="../../basic/IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a></span>, <span name="v2">v2: <a href="../../basic/IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a></span>, <span name="angleToV1Values">angleToV1Values: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result">: <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<a href="../../basic/IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">v1</dt><dd class="cmt"><p>Vector 1</p></dd><dt class="param">v2</dt><dd class="cmt"><p>Vector 2</p></dd><dt class="param">angleToV1Values</dt><dd class="cmt"><p>angles to Vector 1</p></dd><dt>returns</dt><dd class="cmt"><p>
+      <p class="shortcomment cmt">Interp value
+</p><div class="fullcomment"><div class="comment cmt"><p>Interp value
+</p></div><dl class="paramcmts block"><dt class="param">v1</dt><dd class="cmt"><p>Vector 1</p></dd><dt class="param">v2</dt><dd class="cmt"><p>Vector 2</p></dd><dt class="param">angleToV1Values</dt><dd class="cmt"><p>angles to Vector 1</p></dd><dt>returns</dt><dd class="cmt"><p>
 </p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@<a href="../BeCarefulWhileUsing.html" class="extype" name="com.github.tsingjyujing.geo.util.BeCarefulWhileUsing">BeCarefulWhileUsing</a></span><span class="args">(<span>
       message = 

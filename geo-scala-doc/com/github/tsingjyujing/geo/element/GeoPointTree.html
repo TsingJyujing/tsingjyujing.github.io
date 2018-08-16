@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>GeoPointTree - geo-library 2.8.3-2.10 API - com.github.tsingjyujing.geo.element.GeoPointTree</title>
-          <meta name="description" content="GeoPointTree - geo - library 2.8.3 - 2.10 API - com.github.tsingjyujing.geo.element.GeoPointTree" />
-          <meta name="keywords" content="GeoPointTree geo library 2.8.3 2.10 API com.github.tsingjyujing.geo.element.GeoPointTree" />
+          <title>GeoPointTree - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.element.GeoPointTree</title>
+          <meta name="description" content="GeoPointTree - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.element.GeoPointTree" />
+          <meta name="keywords" content="GeoPointTree geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.element.GeoPointTree" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -557,6 +557,24 @@
       </span>
       </h4>
       
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPoint#directionTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="directionTo(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Double"></a>
+      <a id="directionTo(IGeoPoint):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">directionTo</span><span class="params">(<span name="point">point: <a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Get the direction from this to target point in unit of Degree</p><div class="fullcomment"><div class="comment cmt"><p>Get the direction from this to target point in unit of Degree</p><p>North: 0/360
+East:  90
+South: 180
+West:  270
+</p></div><dl class="paramcmts block"><dt class="param">point</dt><dd class="cmt"><p>target point</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd></dl></div>
     </li><li name="scala.collection.IterableLike#drop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="drop(n:Int):Repr"></a>
       <a id="drop(Int):Iterable[T]"></a>
@@ -973,8 +991,8 @@
         <span class="name">getGeoHashAccuracy</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Accuracy to devide earth into N*N parts
-</p><div class="fullcomment"><div class="comment cmt"><p>Accuracy to devide earth into N*N parts
+      <p class="shortcomment cmt">Accuracy to mesh earth into N*N parts
+</p><div class="fullcomment"><div class="comment cmt"><p>Accuracy to mesh earth into N*N parts
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoPointTree">GeoPointTree</a> → <a href="../basic/IHashableGeoBlock.html" class="extype" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock">IHashableGeoBlock</a></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.GeoPointTree#getIndexCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2292,7 +2310,9 @@ JSON object deprecated in Scala 2.12 but still using in 2.10
         <span class="name">verifyLatitude</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Verify is latitude value is legal</p><div class="fullcomment"><div class="comment cmt"><p>Verify is latitude value is legal</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Verify is latitude value is legal
+</p><div class="fullcomment"><div class="comment cmt"><p>Verify is latitude value is legal
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="scala.this.throws.&lt;init&gt;$default$1[AssertionError]">...</span>
@@ -2312,7 +2332,9 @@ JSON object deprecated in Scala 2.12 but still using in 2.10
         <span class="name">verifyLongitude</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Verify is longitude value is legal</p><div class="fullcomment"><div class="comment cmt"><p>Verify is longitude value is legal</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Verify is longitude value is legal
+</p><div class="fullcomment"><div class="comment cmt"><p>Verify is longitude value is legal
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="scala.this.throws.&lt;init&gt;$default$1[AssertionError]">...</span>
@@ -2332,7 +2354,9 @@ JSON object deprecated in Scala 2.12 but still using in 2.10
         <span class="name">verifyValues</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Verify is latitude &amp; longitude values are legal</p><div class="fullcomment"><div class="comment cmt"><p>Verify is latitude &amp; longitude values are legal</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Verify is latitude &amp; longitude values are legal
+</p><div class="fullcomment"><div class="comment cmt"><p>Verify is latitude &amp; longitude values are legal
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="scala.this.throws.&lt;init&gt;$default$1[AssertionError]">...</span>
@@ -2475,6 +2499,22 @@ JSON object deprecated in Scala 2.12 but still using in 2.10
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>IterableLike → GenIterableLike</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable#~&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="~&gt;(point:T):Double"></a>
+      <a id="~&gt;(IGeoPoint):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $tilde$greater" class="name">~&gt;</span><span class="params">(<span name="point">point: <a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Alias of geoTo
+</p><div class="fullcomment"><div class="comment cmt"><p>Alias of geoTo
+</p></div><dl class="paramcmts block"><dt class="param">point</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a></dd></dl></div>
     </li></ol>
             </div>
 
