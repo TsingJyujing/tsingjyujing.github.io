@@ -1,14 +1,18 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>GeoBox - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.element.GeoBox</title>
-          <meta name="description" content="GeoBox - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.element.GeoBox" />
-          <meta name="keywords" content="GeoBox geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.element.GeoBox" />
+          <title>GeoBox - geo-library 2.8.9-2.11 API - com.github.tsingjyujing.geo.element.GeoBox</title>
+          <meta name="description" content="GeoBox - geo - library 2.8.9 - 2.11 API - com.github.tsingjyujing.geo.element.GeoBox" />
+          <meta name="keywords" content="GeoBox geo library 2.8.9 2.11 API com.github.tsingjyujing.geo.element.GeoBox" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../index.html';
@@ -24,9 +28,17 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="GeoBox$.html" title="Go to companion"><img src="../../../../../lib/class_to_object_big.png" /></a>
+        <a href="GeoBox$.html" title="See companion object"><img alt="Class/Object" src="../../../../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.tsingjyujing">tsingjyujing</a>.<a href="../package.html" class="extype" name="com.github.tsingjyujing.geo">geo</a>.<a href="package.html" class="extype" name="com.github.tsingjyujing.geo.element">element</a></p>
-        <h1><a href="GeoBox$.html" title="Go to companion">GeoBox</a></h1>
+        <h1><a href="GeoBox$.html" title="See companion object">GeoBox</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="GeoBox$.html" title="See companion object">object GeoBox</a>
+            | <a href="package.html" class="extype" name="com.github.tsingjyujing.geo.element">package element</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -40,8 +52,7 @@
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A boundary box with min/max longitude/latitude
-</p></div><dl class="paramcmts block"><dt class="param">minLongitude</dt><dd class="cmt"></dd><dt class="param">maxLongitude</dt><dd class="cmt"></dd><dt class="param">minLatitude</dt><dd class="cmt"></dd><dt class="param">maxLatitude</dt><dd class="cmt"><p>
-</p></dd></dl><div class="toggleContainer block">
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a>[<a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -54,7 +65,7 @@
               <ol>
                 
                 <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
               </ol>
             </div>
         <div id="ancestors">
@@ -67,9 +78,8 @@
             <span class="filtertype"></span>
             <ol>
               <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
+              <li class="showall in"><span>Show All</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -81,7 +91,7 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="com.github.tsingjyujing.geo.element.GeoBox#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+              <ol><li name="com.github.tsingjyujing.geo.element.GeoBox#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;init&gt;(minLongitude:Double,maxLongitude:Double,minLatitude:Double,maxLatitude:Double):com.github.tsingjyujing.geo.element.GeoBox"></a>
       <a id="&lt;init&gt;:GeoBox"></a>
       <h4 class="signature">
@@ -92,9 +102,12 @@
       <span class="symbol">
         <span class="name">GeoBox</span><span class="params">(<span name="minLongitude">minLongitude: <span class="extype" name="scala.Double">Double</span></span>, <span name="maxLongitude">maxLongitude: <span class="extype" name="scala.Double">Double</span></span>, <span name="minLatitude">minLatitude: <span class="extype" name="scala.Double">Double</span></span>, <span name="maxLatitude">maxLatitude: <span class="extype" name="scala.Double">Double</span></span>)</span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">minLongitude</dt><dd class="cmt"></dd><dt class="param">maxLongitude</dt><dd class="cmt"></dd><dt class="param">minLatitude</dt><dd class="cmt"></dd><dt class="param">maxLatitude</dt><dd class="cmt"><p>
-</p></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@&lt;init&gt;(minLongitude:Double,maxLongitude:Double,minLatitude:Double,maxLatitude:Double):com.github.tsingjyujing.geo.element.GeoBox" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li></ol>
             </div>
 
@@ -105,19 +118,6 @@
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -128,8 +128,12 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -141,7 +145,11 @@
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#&amp;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&amp;(b:com.github.tsingjyujing.geo.element.GeoBox):Option[com.github.tsingjyujing.geo.element.GeoBox]"></a>
@@ -154,25 +162,15 @@
       <span class="symbol">
         <span title="gt4s: $amp" class="name">&amp;</span><span class="params">(<span name="b">b: <a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoBox">GeoBox</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoBox">GeoBox</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@&amp;(b:com.github.tsingjyujing.geo.element.GeoBox):Option[com.github.tsingjyujing.geo.element.GeoBox]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Get intersect zone of GeoBlock
 </p><div class="fullcomment"><div class="comment cmt"><p>Get intersect zone of GeoBlock
-</p></div><dl class="paramcmts block"><dt class="param">b</dt><dd class="cmt"><p>geo-block</p></dd><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">b</dt><dd class="cmt"><p>geo-block</p></dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -183,8 +181,12 @@
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#anglePoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="anglePoints:Array[com.github.tsingjyujing.geo.element.immutable.GeoPoint]"></a>
       <a id="anglePoints:Array[GeoPoint]"></a>
@@ -196,7 +198,11 @@
       <span class="symbol">
         <span class="name">anglePoints</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<a href="immutable/GeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoPoint">GeoPoint</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@anglePoints:Array[com.github.tsingjyujing.geo.element.immutable.GeoPoint]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#area" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="area:Double"></a>
@@ -209,13 +215,16 @@
       <span class="symbol">
         <span class="name">area</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@area:Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"><p></p><pre>assert x as longitude and y as latitude
 \delta_{x} = max longitude - min longitude
 y1 = max latitude
 y0 = min latitude
-S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl></div>
+S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -227,7 +236,11 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -240,8 +253,14 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
@@ -259,11 +278,14 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">contains</span><span class="params">(<span name="x">x: <a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@contains(x:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Is x contains in self
 </p><div class="fullcomment"><div class="comment cmt"><p>Is x contains in self
-</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoBox">GeoBox</a> → <a href="../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoBox">GeoBox</a> → <a href="../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -275,27 +297,12 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <a id="finalize():Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -307,8 +314,15 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#getLatitudeRange" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="getLatitudeRange:com.github.tsingjyujing.geo.element.DoubleRange"></a>
       <a id="getLatitudeRange:DoubleRange"></a>
@@ -320,7 +334,11 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">getLatitudeRange</span><span class="result">: <a href="DoubleRange.html" class="extype" name="com.github.tsingjyujing.geo.element.DoubleRange">DoubleRange</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@getLatitudeRange:com.github.tsingjyujing.geo.element.DoubleRange" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#getLongitudeRange" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="getLongitudeRange:com.github.tsingjyujing.geo.element.DoubleRange"></a>
@@ -333,7 +351,11 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">getLongitudeRange</span><span class="result">: <a href="DoubleRange.html" class="extype" name="com.github.tsingjyujing.geo.element.DoubleRange">DoubleRange</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@getLongitudeRange:com.github.tsingjyujing.geo.element.DoubleRange" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -346,7 +368,11 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#isIntersect" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isIntersect(b:com.github.tsingjyujing.geo.element.GeoBox):Boolean"></a>
@@ -359,7 +385,11 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">isIntersect</span><span class="params">(<span name="b">b: <a href="" class="extype" name="com.github.tsingjyujing.geo.element.GeoBox">GeoBox</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@isIntersect(b:com.github.tsingjyujing.geo.element.GeoBox):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#maxLatitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="maxLatitude:Double"></a>
@@ -372,9 +402,12 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">maxLatitude</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt">
-</p>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@maxLatitude:Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#maxLongitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="maxLongitude:Double"></a>
       <a id="maxLongitude:Double"></a>
@@ -386,8 +419,12 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">maxLongitude</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@maxLongitude:Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#minLatitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="minLatitude:Double"></a>
       <a id="minLatitude:Double"></a>
@@ -399,8 +436,12 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">minLatitude</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@minLatitude:Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="com.github.tsingjyujing.geo.element.GeoBox#minLongitude" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="minLongitude:Double"></a>
       <a id="minLongitude:Double"></a>
@@ -412,8 +453,12 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">minLongitude</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt"></p>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@minLongitude:Double" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -425,7 +470,11 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.basic.operations.IContains#nonContains" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="nonContains(x:T):Boolean"></a>
@@ -438,11 +487,14 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">nonContains</span><span class="params">(<span name="x">x: <a href="../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@nonContains(x:T):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">NOT contains
 </p><div class="fullcomment"><div class="comment cmt"><p>NOT contains
-</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a></dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -454,8 +506,15 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
@@ -467,8 +526,15 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -480,9 +546,13 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.github.tsingjyujing.geo.element.GeoBox#toPolygon" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.github.tsingjyujing.geo.element.GeoBox#toPolygon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="toPolygon:com.github.tsingjyujing.geo.element.GeoPolygon"></a>
       <a id="toPolygon:GeoPolygon"></a>
       <h4 class="signature">
@@ -493,28 +563,12 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">toPolygon</span><span class="result">: <a href="GeoPolygon.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoPolygon">GeoPolygon</a></span>
       </span>
-      </h4>
-      <p class="shortcomment cmt">Get polygon of this block</p><div class="fullcomment"><div class="comment cmt"><p>Get polygon of this block</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <a id="wait():Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@toPolygon:com.github.tsingjyujing.geo.element.GeoPolygon" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get polygon of this block</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
@@ -526,7 +580,11 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -545,7 +603,34 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -558,7 +643,37 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.element.GeoBox@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
@@ -592,6 +707,7 @@ S = R \times \Delta{x} \times \int_{y_0}^{y_1}{ cos(y) dy \times R}</pre></div><
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+
+
     </body>
       </html>

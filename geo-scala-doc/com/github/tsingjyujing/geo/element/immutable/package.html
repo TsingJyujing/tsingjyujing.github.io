@@ -1,14 +1,18 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>immutable - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.element.immutable</title>
-          <meta name="description" content="immutable - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.element.immutable" />
-          <meta name="keywords" content="immutable geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.element.immutable" />
+          <title>immutable - geo-library 2.8.9-2.11 API - com.github.tsingjyujing.geo.element.immutable</title>
+          <meta name="description" content="immutable - geo - library 2.8.9 - 2.11 API - com.github.tsingjyujing.geo.element.immutable" />
+          <meta name="keywords" content="immutable geo library 2.8.9 2.11 API com.github.tsingjyujing.geo.element.immutable" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../../index.html';
@@ -24,9 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../../../lib/package_big.png" />
+        <img alt="Package" src="../../../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.tsingjyujing">tsingjyujing</a>.<a href="../../package.html" class="extype" name="com.github.tsingjyujing.geo">geo</a>.<a href="../package.html" class="extype" name="com.github.tsingjyujing.geo.element">element</a></p>
-        <h1>immutable</h1>
+        <h1>immutable</h1><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -58,34 +66,63 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.github.tsingjyujing.geo.element.immutable.GeoLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GeoLineextendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithProductwithSerializable"></a>
-      <a id="GeoLine:GeoLine"></a>
+              <ol><li name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GeoFastLineString[TGeoPoint&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithIContains[com.github.tsingjyujing.geo.basic.IGeoPoint]withProductwithSerializable"></a>
+      <a id="GeoFastLineString[TGeoPoint&lt;:IGeoPoint]:GeoFastLineString[TGeoPoint]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GeoLine.html"><span class="name">GeoLine</span></a><span class="params">(<span name="pointStart">pointStart: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>, <span name="pointEnd">pointEnd: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result"> extends <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="GeoFastLineString.html"><span class="name">GeoFastLineString</span></a><span class="tparams">[<span name="TGeoPoint">TGeoPoint &lt;: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>]</span><span class="params">(<span name="points">points: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString.TGeoPoint">TGeoPoint</span>]</span>, <span name="searchRadius">searchRadius: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <a href="../../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Create a GeoLine object
-</p>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GeoLineStringextendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithProductwithSerializable"></a>
-      <a id="GeoLineString:GeoLineString"></a>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@GeoFastLineString[TGeoPoint&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithIContains[com.github.tsingjyujing.geo.basic.IGeoPoint]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Geo point line string which can search/get distance fast
+</p><div class="fullcomment"><div class="comment cmt"><p>Geo point line string which can search/get distance fast
+</p></div><dl class="paramcmts block"><dt class="param">points</dt><dd class="cmt"><p>points which contribute line string</p></dd><dt class="param">searchRadius</dt><dd class="cmt"><p>radius to search</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GeoLine[TGeoPoint&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithProductwithSerializable"></a>
+      <a id="GeoLine[TGeoPoint&lt;:IGeoPoint]:GeoLine[TGeoPoint]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="GeoLineString.html"><span class="name">GeoLineString</span></a><span class="params">(<span name="points">points: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>]</span>)</span><span class="result"> extends <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="GeoLine.html"><span class="name">GeoLine</span></a><span class="tparams">[<span name="TGeoPoint">TGeoPoint &lt;: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>]</span><span class="params">(<span name="pointStart">pointStart: <span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoLine.TGeoPoint">TGeoPoint</span></span>, <span name="pointEnd">pointEnd: <span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoLine.TGeoPoint">TGeoPoint</span></span>)</span><span class="result"> extends <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Geo point line string
-</p>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@GeoLine[TGeoPoint&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a GeoLine object
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a GeoLine object
+</p></div><dl class="paramcmts block"><dt class="tparam">TGeoPoint</dt><dd class="cmt"><p>Type of GeoPoint</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GeoLineString[TGeoPoint&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithProductwithSerializable"></a>
+      <a id="GeoLineString[TGeoPoint&lt;:IGeoPoint]:GeoLineString[TGeoPoint]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GeoLineString.html"><span class="name">GeoLineString</span></a><span class="tparams">[<span name="TGeoPoint">TGeoPoint &lt;: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>]</span><span class="params">(<span name="points">points: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.TGeoPoint">TGeoPoint</span>]</span>)</span><span class="result"> extends <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@GeoLineString[TGeoPoint&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Geo point line string
+</p><div class="fullcomment"><div class="comment cmt"><p>Geo point line string
+</p></div><dl class="paramcmts block"><dt class="param">points</dt><dd class="cmt"><p>points which contribute line string</p></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoPoint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GeoPointextendsIGeoPointwithProductwithSerializable"></a>
       <a id="GeoPoint:GeoPoint"></a>
@@ -97,10 +134,14 @@
       <span class="symbol">
         <a href="GeoPoint.html"><span class="name">GeoPoint</span></a><span class="params">(<span name="longitude">longitude: <span class="extype" name="scala.Double">Double</span></span>, <span name="latitude">latitude: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Get a immutable geo point
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@GeoPointextendsIGeoPointwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get a immutable geo point
 </p>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoPointValued" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoPointValued" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="GeoPointValued[T]extendsIGeoPointwithIValue[T]withProductwithSerializable"></a>
       <a id="GeoPointValued[T]:GeoPointValued[T]"></a>
       <h4 class="signature">
@@ -111,9 +152,14 @@
       <span class="symbol">
         <a href="GeoPointValued.html"><span class="name">GeoPointValued</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="longitude">longitude: <span class="extype" name="scala.Double">Double</span></span>, <span name="latitude">latitude: <span class="extype" name="scala.Double">Double</span></span>, <span name="value">value: <span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoPointValued.T">T</span></span>)</span><span class="result"> extends <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a> with <a href="../../basic/operations/IValue.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IValue">IValue</a>[<span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoPointValued.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Get a geo point with value
-</p>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@GeoPointValued[T]extendsIGeoPointwithIValue[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get a geo point with value
+</p><div class="fullcomment"><div class="comment cmt"><p>Get a geo point with value
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>value type</p></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.immutable.HashedGeoBlock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HashedGeoBlockextendsIHashableGeoBlock"></a>
       <a id="HashedGeoBlock:HashedGeoBlock"></a>
@@ -125,10 +171,14 @@
       <span class="symbol">
         <a href="HashedGeoBlock.html"><span class="name">HashedGeoBlock</span></a><span class="result"> extends <a href="../../basic/IHashableGeoBlock.html" class="extype" name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock">IHashableGeoBlock</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Get a hashed geo block
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@HashedGeoBlockextendsIHashableGeoBlock" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get a hashed geo block
 </p>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.TimeElement" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.TimeElement" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="TimeElement[+T]extendsITickwithIValue[T]withProductwithSerializable"></a>
       <a id="TimeElement[+T]:TimeElement[T]"></a>
       <h4 class="signature">
@@ -139,9 +189,14 @@
       <span class="symbol">
         <a href="TimeElement.html"><span class="name">TimeElement</span></a><span class="tparams">[<span name="T">+T</span>]</span><span class="params">(<span name="time">time: <span class="extype" name="scala.Double">Double</span></span>, <span name="value">value: <span class="extype" name="com.github.tsingjyujing.geo.element.immutable.TimeElement.T">T</span></span>)</span><span class="result"> extends <a href="../../basic/timeseries/ITick.html" class="extype" name="com.github.tsingjyujing.geo.basic.timeseries.ITick">ITick</a> with <a href="../../basic/operations/IValue.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IValue">IValue</a>[<span class="extype" name="com.github.tsingjyujing.geo.element.immutable.TimeElement.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Pack value with time
-</p>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@TimeElement[+T]extendsITickwithIValue[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Pack value with time
+</p><div class="fullcomment"><div class="comment cmt"><p>Pack value with time
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>value type</p></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.element.immutable.Vector2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Vector2extendsIVector2withProductwithSerializable"></a>
       <a id="Vector2:Vector2"></a>
@@ -153,8 +208,12 @@
       <span class="symbol">
         <a href="Vector2.html"><span class="name">Vector2</span></a><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="y">y: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="../../basic/IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Implementation of IVector2
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@Vector2extendsIVector2withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implementation of IVector2
 </p>
     </li><li name="com.github.tsingjyujing.geo.element.immutable.Vector3" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Vector3extendsIVector3withProductwithSerializable"></a>
@@ -167,8 +226,12 @@
       <span class="symbol">
         <a href="Vector3.html"><span class="name">Vector3</span></a><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="y">y: <span class="extype" name="scala.Double">Double</span></span>, <span name="z">z: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="../../basic/IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Implementation of IVector3
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@Vector3extendsIVector3withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implementation of IVector3
 </p>
     </li></ol>
             </div>
@@ -188,7 +251,28 @@
       <span class="symbol">
         <a href="GeoPoint$.html"><span class="name">GeoPoint</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@GeoPoint" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoPointValued" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GeoPointValued"></a>
+      <a id="GeoPointValued:GeoPointValued"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GeoPointValued$.html"><span class="name">GeoPointValued</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@GeoPointValued" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.element.immutable.HashedGeoBlock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HashedGeoBlock"></a>
@@ -201,7 +285,11 @@
       <span class="symbol">
         <a href="HashedGeoBlock$.html"><span class="name">HashedGeoBlock</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.package@HashedGeoBlock" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -228,6 +316,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../../lib/template.js"></script>
+
+
     </body>
       </html>

@@ -1,14 +1,18 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>basic - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.basic</title>
-          <meta name="description" content="basic - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.basic" />
-          <meta name="keywords" content="basic geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.basic" />
+          <title>basic - geo-library 2.8.9-2.11 API - com.github.tsingjyujing.geo.basic</title>
+          <meta name="description" content="basic - geo - library 2.8.9 - 2.11 API - com.github.tsingjyujing.geo.basic" />
+          <meta name="keywords" content="basic geo library 2.8.9 2.11 API com.github.tsingjyujing.geo.basic" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../index.html';
@@ -24,9 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../../lib/package_big.png" />
+        <img alt="Package" src="../../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.tsingjyujing">tsingjyujing</a>.<a href="../package.html" class="extype" name="com.github.tsingjyujing.geo">geo</a></p>
-        <h1>basic</h1>
+        <h1>basic</h1><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -69,10 +77,14 @@
       <span class="symbol">
         <a href="IGeoPoint.html"><span class="name">IGeoPoint</span></a><span class="result"> extends <a href="operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Any type which can get longitude and latitude (on earth)
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IGeoPointextendsGeoDistanceMeasurable[com.github.tsingjyujing.geo.basic.IGeoPoint]withGeoJSONablewithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Any type which can get longitude and latitude (on earth)
 </p>
-    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPointSet" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="com.github.tsingjyujing.geo.basic.IGeoPointSet" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="IGeoPointSet[T&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsIterable[T]withGeoJSONable"></a>
       <a id="IGeoPointSet[T&lt;:IGeoPoint]:IGeoPointSet[T]"></a>
       <h4 class="signature">
@@ -83,9 +95,14 @@
       <span class="symbol">
         <a href="IGeoPointSet.html"><span class="name">IGeoPointSet</span></a><span class="tparams">[<span name="T">T &lt;: <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>]</span><span class="result"> extends <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPointSet.T">T</span>] with <a href="operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A point set to query points easily
-</p>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IGeoPointSet[T&lt;:com.github.tsingjyujing.geo.basic.IGeoPoint]extendsIterable[T]withGeoJSONable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A point set to query points easily
+</p><div class="fullcomment"><div class="comment cmt"><p>A point set to query points easily
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>Type to save geo points, any type extends IGeoPoint</p></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="IHashableGeoBlockextendsIGeoPointwithIHashedIndex[Long]"></a>
       <a id="IHashableGeoBlock:IHashableGeoBlock"></a>
@@ -97,8 +114,12 @@
       <span class="symbol">
         <a href="IHashableGeoBlock.html"><span class="name">IHashableGeoBlock</span></a><span class="result"> extends <a href="IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a> with <a href="operations/IHashedIndex.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IHashedIndex">IHashedIndex</a>[<span class="extype" name="scala.Long">Long</span>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">Squared hash of geo
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IHashableGeoBlockextendsIGeoPointwithIHashedIndex[Long]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Squared hash of geo
 Which geo point can get an Long index value and get hashed.</p>
     </li><li name="com.github.tsingjyujing.geo.basic.IVector2" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="IVector2extendsIVectorwithInnerProductable[com.github.tsingjyujing.geo.basic.IVector2]withAngleable[com.github.tsingjyujing.geo.basic.IVector2]withDistanceMeasurable[com.github.tsingjyujing.geo.basic.IVector2]withAddable[com.github.tsingjyujing.geo.basic.IVector2]"></a>
@@ -111,8 +132,12 @@ Which geo point can get an Long index value and get hashed.</p>
       <span class="symbol">
         <a href="IVector2.html"><span class="name">IVector2</span></a><span class="result"> extends <a href="operations/IVector.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IVector">IVector</a> with <a href="operations/InnerProductable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.InnerProductable">InnerProductable</a>[<a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a>] with <a href="operations/Angleable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.Angleable">Angleable</a>[<a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a>] with <a href="operations/DistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.DistanceMeasurable">DistanceMeasurable</a>[<a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a>] with <a href="operations/Addable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.Addable">Addable</a>[<a href="IVector2.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector2">IVector2</a>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">vector in 2d Euclid space
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IVector2extendsIVectorwithInnerProductable[com.github.tsingjyujing.geo.basic.IVector2]withAngleable[com.github.tsingjyujing.geo.basic.IVector2]withDistanceMeasurable[com.github.tsingjyujing.geo.basic.IVector2]withAddable[com.github.tsingjyujing.geo.basic.IVector2]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">vector in 2d Euclid space
 </p>
     </li><li name="com.github.tsingjyujing.geo.basic.IVector3" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="IVector3extendsIVectorwithInnerProductable[com.github.tsingjyujing.geo.basic.IVector3]withAngleable[com.github.tsingjyujing.geo.basic.IVector3]withDistanceMeasurable[com.github.tsingjyujing.geo.basic.IVector3]withOuterProductable[com.github.tsingjyujing.geo.basic.IVector3,com.github.tsingjyujing.geo.basic.IVector3]withAddable[com.github.tsingjyujing.geo.basic.IVector3]"></a>
@@ -125,8 +150,12 @@ Which geo point can get an Long index value and get hashed.</p>
       <span class="symbol">
         <a href="IVector3.html"><span class="name">IVector3</span></a><span class="result"> extends <a href="operations/IVector.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IVector">IVector</a> with <a href="operations/InnerProductable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.InnerProductable">InnerProductable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>] with <a href="operations/Angleable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.Angleable">Angleable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>] with <a href="operations/DistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.DistanceMeasurable">DistanceMeasurable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>] with <a href="operations/OuterProductable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.OuterProductable">OuterProductable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>, <a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>] with <a href="operations/Addable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.Addable">Addable</a>[<a href="IVector3.html" class="extype" name="com.github.tsingjyujing.geo.basic.IVector3">IVector3</a>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">vector in 2d Euclid space
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IVector3extendsIVectorwithInnerProductable[com.github.tsingjyujing.geo.basic.IVector3]withAngleable[com.github.tsingjyujing.geo.basic.IVector3]withDistanceMeasurable[com.github.tsingjyujing.geo.basic.IVector3]withOuterProductable[com.github.tsingjyujing.geo.basic.IVector3,com.github.tsingjyujing.geo.basic.IVector3]withAddable[com.github.tsingjyujing.geo.basic.IVector3]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">vector in 2d Euclid space
 </p>
     </li></ol>
             </div>
@@ -146,7 +175,11 @@ Which geo point can get an Long index value and get hashed.</p>
       <span class="symbol">
         <a href="IGeoPoint$.html"><span class="name">IGeoPoint</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IGeoPoint" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.basic.IHashableGeoBlock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="IHashableGeoBlock"></a>
@@ -159,7 +192,11 @@ Which geo point can get an Long index value and get hashed.</p>
       <span class="symbol">
         <a href="IHashableGeoBlock$.html"><span class="name">IHashableGeoBlock</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IHashableGeoBlock" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.basic.IVector2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="IVector2"></a>
@@ -172,7 +209,11 @@ Which geo point can get an Long index value and get hashed.</p>
       <span class="symbol">
         <a href="IVector2$.html"><span class="name">IVector2</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IVector2" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.basic.IVector3" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="IVector3"></a>
@@ -185,7 +226,11 @@ Which geo point can get an Long index value and get hashed.</p>
       <span class="symbol">
         <a href="IVector3$.html"><span class="name">IVector3</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@IVector3" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.basic.operations" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="operations"></a>
@@ -198,7 +243,11 @@ Which geo point can get an Long index value and get hashed.</p>
       <span class="symbol">
         <a href="operations/package.html"><span class="name">operations</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@operations" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="com.github.tsingjyujing.geo.basic.timeseries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="timeseries"></a>
@@ -211,7 +260,11 @@ Which geo point can get an Long index value and get hashed.</p>
       <span class="symbol">
         <a href="timeseries/package.html"><span class="name">timeseries</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#com.github.tsingjyujing.geo.basic.package@timeseries" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -238,6 +291,7 @@ Which geo point can get an Long index value and get hashed.</p>
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+
+
     </body>
       </html>

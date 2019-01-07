@@ -1,14 +1,18 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>GCJ02 - geo-library 2.8.8-2.10 API - com.github.tsingjyujing.geo.util.convertor.GCJ02</title>
-          <meta name="description" content="GCJ02 - geo - library 2.8.8 - 2.10 API - com.github.tsingjyujing.geo.util.convertor.GCJ02" />
-          <meta name="keywords" content="GCJ02 geo library 2.8.8 2.10 API com.github.tsingjyujing.geo.util.convertor.GCJ02" />
+          <title>GCJ02 - geo-library 2.8.9-2.11 API - com.github.tsingjyujing.geo.util.convertor.GCJ02</title>
+          <meta name="description" content="GCJ02 - geo - library 2.8.9 - 2.11 API - com.github.tsingjyujing.geo.util.convertor.GCJ02" />
+          <meta name="keywords" content="GCJ02 geo library 2.8.9 2.11 API com.github.tsingjyujing.geo.util.convertor.GCJ02" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../../index.html';
@@ -24,9 +28,15 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../../../lib/object_big.png" />
+        <img alt="Object" src="../../../../../../lib/object_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.tsingjyujing">tsingjyujing</a>.<a href="../../package.html" class="extype" name="com.github.tsingjyujing.geo">geo</a>.<a href="../package.html" class="extype" name="com.github.tsingjyujing.geo.util">util</a>.<a href="package.html" class="extype" name="com.github.tsingjyujing.geo.util.convertor">convertor</a></p>
-        <h1>GCJ02</h1>
+        <h1>GCJ02</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="com.github.tsingjyujing.geo.util.convertor">package convertor</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -42,7 +52,8 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>GCJ02是中国国家测绘局提出的坐标加密系统
 其复杂的函数表达式为政府瞎JB收费提供了便利
 其良好的局部线性和全局近似线性为我等屁民破解提供了便利</p><p>经过测试，所有的坐标点都可以完美的和WGS84相互转换</p><p>本类适用于WGS84坐标系和GCJ02加密坐标系的互相转换
-GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div class="toggleContainer block">
+GSJ02坐标系适用于大部分的地图，例如高德地图
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="../../basic/operations/GeoTransformable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable">GeoTransformable</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -55,7 +66,7 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
               <ol>
                 
                 <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
               </ol>
             </div>
         <div id="ancestors">
@@ -68,9 +79,8 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
             <span class="filtertype"></span>
             <ol>
               <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
+              <li class="showall in"><span>Show All</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -89,19 +99,6 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -112,8 +109,12 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -125,22 +126,13 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -151,8 +143,12 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -164,7 +160,11 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -177,8 +177,14 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
@@ -196,7 +202,11 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -209,27 +219,12 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <a id="finalize():Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -241,8 +236,15 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -254,8 +256,15 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable#inverseTransform" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="inverseTransform(y:com.github.tsingjyujing.geo.basic.IGeoPoint,eps:Double):com.github.tsingjyujing.geo.basic.IGeoPoint"></a>
       <a id="inverseTransform(IGeoPoint,Double):IGeoPoint"></a>
@@ -267,11 +276,14 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">inverseTransform</span><span class="params">(<span name="y">y: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>, <span name="eps">eps: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.01</span></span>)</span><span class="result">: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@inverseTransform(y:com.github.tsingjyujing.geo.basic.IGeoPoint,eps:Double):com.github.tsingjyujing.geo.basic.IGeoPoint" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">use iter-function method to auto reverse position
 </p><div class="fullcomment"><div class="comment cmt"><p>use iter-function method to auto reverse position
-</p></div><dl class="paramcmts block"><dt class="param">y</dt><dd class="cmt"><p>transformed location</p></dd><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../basic/operations/GeoTransformable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable">GeoTransformable</a></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">y</dt><dd class="cmt"><p>transformed location</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../basic/operations/GeoTransformable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable">GeoTransformable</a></dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable#inverseTransformFast" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="inverseTransformFast(y:com.github.tsingjyujing.geo.basic.IGeoPoint):com.github.tsingjyujing.geo.element.mutable.GeoPoint"></a>
       <a id="inverseTransformFast(IGeoPoint):GeoPoint"></a>
@@ -283,11 +295,14 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">inverseTransformFast</span><span class="params">(<span name="y">y: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <a href="../../element/mutable/GeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.element.mutable.GeoPoint">GeoPoint</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@inverseTransformFast(y:com.github.tsingjyujing.geo.basic.IGeoPoint):com.github.tsingjyujing.geo.element.mutable.GeoPoint" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">auto reverse transform of the position, need position has a goot ability of local-liner
 </p><div class="fullcomment"><div class="comment cmt"><p>auto reverse transform of the position, need position has a goot ability of local-liner
-</p></div><dl class="paramcmts block"><dt class="param">y</dt><dd class="cmt"><p>transformed location</p></dd><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../basic/operations/GeoTransformable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable">GeoTransformable</a></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">y</dt><dd class="cmt"><p>transformed location</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../basic/operations/GeoTransformable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable">GeoTransformable</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -299,7 +314,11 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -312,9 +331,13 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="com.github.tsingjyujing.geo.util.convertor.GCJ02#needTransform" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="com.github.tsingjyujing.geo.util.convertor.GCJ02#needTransform" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="needTransform(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean"></a>
       <a id="needTransform(IGeoPoint):Boolean"></a>
       <h4 class="signature">
@@ -325,11 +348,31 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">needTransform</span><span class="params">(<span name="point">point: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@needTransform(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">is point in china and need to transform
-</p><div class="fullcomment"><div class="comment cmt"><p>is point in china and need to transform
-</p></div><dl class="paramcmts block"><dt class="param">point</dt><dd class="cmt"></dd><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl></div>
+</p>
+    </li><li name="com.github.tsingjyujing.geo.util.convertor.GCJ02#needTransformAccuracy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="needTransformAccuracy(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean"></a>
+      <a id="needTransformAccuracy(IGeoPoint):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">needTransformAccuracy</span><span class="params">(<span name="point">point: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@needTransformAccuracy(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">is point in china and need to transform
+</p>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -341,8 +384,15 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
@@ -354,8 +404,32 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.util.convertor.GCJ02#polygonOfChina" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="polygonOfChina:IndexedSeq[com.github.tsingjyujing.geo.element.GeoPolygonWithHoles]"></a>
+      <a id="polygonOfChina:IndexedSeq[GeoPolygonWithHoles]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">polygonOfChina</span><span class="result">: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<a href="../../element/GeoPolygonWithHoles.html" class="extype" name="com.github.tsingjyujing.geo.element.GeoPolygonWithHoles">GeoPolygonWithHoles</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@polygonOfChina:IndexedSeq[com.github.tsingjyujing.geo.element.GeoPolygonWithHoles]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -367,7 +441,11 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -380,7 +458,11 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.github.tsingjyujing.geo.util.convertor.GCJ02#transform" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="transform(x:com.github.tsingjyujing.geo.basic.IGeoPoint):com.github.tsingjyujing.geo.basic.IGeoPoint"></a>
@@ -393,30 +475,14 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">transform</span><span class="params">(<span name="x">x: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@transform(x:com.github.tsingjyujing.geo.basic.IGeoPoint):com.github.tsingjyujing.geo.basic.IGeoPoint" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Encrypt WGS84 location to other format
 </p><div class="fullcomment"><div class="comment cmt"><p>Encrypt WGS84 location to other format
-</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>WGS84 position</p></dd><dt>returns</dt><dd class="cmt"><p>
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.util.convertor.GCJ02">GCJ02</a> → <a href="../../basic/operations/GeoTransformable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable">GeoTransformable</a></dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <a id="wait():Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>WGS84 position</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.util.convertor.GCJ02">GCJ02</a> → <a href="../../basic/operations/GeoTransformable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoTransformable">GeoTransformable</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
@@ -428,7 +494,11 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -447,7 +517,34 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -460,7 +557,59 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.util.convertor.GCJ02#needTransformFast" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="needTransformFast(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean"></a>
+      <a id="needTransformFast(IGeoPoint):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: Fast but not accuracy near China like India/Vietnam/...">needTransformFast</span><span class="params">(<span name="point">point: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.util.convertor.GCJ02$@needTransformFast(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">is point in china and need to transform
+</p><div class="fullcomment"><div class="comment cmt"><p>is point in china and need to transform
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p>Fast but not accuracy near China like India/Vietnam/...</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
@@ -486,6 +635,7 @@ GSJ02坐标系适用于大部分的地图，例如高德地图</p></div><div cla
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../../lib/template.js"></script>
+
+
     </body>
       </html>

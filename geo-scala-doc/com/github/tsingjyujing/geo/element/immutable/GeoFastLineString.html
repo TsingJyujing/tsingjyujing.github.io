@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>FetchResult - geo-library 2.8.9-2.11 API - com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult</title>
-          <meta name="description" content="FetchResult - geo - library 2.8.9 - 2.11 API - com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult" />
-          <meta name="keywords" content="FetchResult geo library 2.8.9 2.11 API com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult" />
+          <title>GeoFastLineString - geo-library 2.8.9-2.11 API - com.github.tsingjyujing.geo.element.immutable.GeoFastLineString</title>
+          <meta name="description" content="GeoFastLineString - geo - library 2.8.9 - 2.11 API - com.github.tsingjyujing.geo.element.immutable.GeoFastLineString" />
+          <meta name="keywords" content="GeoFastLineString geo library 2.8.9 2.11 API com.github.tsingjyujing.geo.element.immutable.GeoFastLineString" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../../index.html';
-            var hash = 'com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult';
+            var hash = 'com.github.tsingjyujing.geo.element.immutable.GeoFastLineString';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -29,11 +29,11 @@
         <body class="type">
       <div id="definition">
         <img alt="Class" src="../../../../../../lib/class_big.png" />
-        <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.tsingjyujing">tsingjyujing</a>.<a href="../../package.html" class="extype" name="com.github.tsingjyujing.geo">geo</a>.<a href="../package.html" class="extype" name="com.github.tsingjyujing.geo.element">element</a>.<a href="package.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable">immutable</a>.<a href="GeoLineString.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoLineString">GeoLineString</a></p>
-        <h1>FetchResult</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="GeoLineString.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoLineString">package GeoLineString</a>
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.tsingjyujing">tsingjyujing</a>.<a href="../../package.html" class="extype" name="com.github.tsingjyujing.geo">geo</a>.<a href="../package.html" class="extype" name="com.github.tsingjyujing.geo.element">element</a>.<a href="package.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable">immutable</a></p>
+        <h1>GeoFastLineString</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable">package immutable</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -45,14 +45,14 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">FetchResult</span><span class="params">(<span name="offsetStart">offsetStart: <span class="extype" name="scala.Int">Int</span></span>, <span name="offsetEnd">offsetEnd: <span class="extype" name="scala.Int">Int</span></span>, <span name="distance">distance: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">GeoFastLineString</span><span class="tparams">[<span name="TGeoPoint">TGeoPoint &lt;: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>]</span><span class="params">(<span name="points">points: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString.TGeoPoint">TGeoPoint</span>]</span>, <span name="searchRadius">searchRadius: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a> with <a href="../../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Fetch result of the line string
-</p></div><dl class="paramcmts block"><dt class="param">offsetStart</dt><dd class="cmt"><p>start point index</p></dd><dt class="param">offsetEnd</dt><dd class="cmt"><p>end point index</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to line</p></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Geo point line string which can search/get distance fast
+</p></div><dl class="paramcmts block"><dt class="param">points</dt><dd class="cmt"><p>points which contribute line string</p></dd><dt class="param">searchRadius</dt><dd class="cmt"><p>radius to search</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="../../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>], <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a>, <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -70,7 +70,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult"><span>FetchResult</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString"><span>GeoFastLineString</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="com.github.tsingjyujing.geo.basic.operations.IContains"><span>IContains</span></li><li class="in" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable"><span>GeoJSONable</span></li><li class="in" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable"><span>GeoDistanceMeasurable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -89,23 +89,23 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(offsetStart:Int,offsetEnd:Int,distance:Double):GeoLineString.this.FetchResult"></a>
-      <a id="&lt;init&gt;:FetchResult"></a>
+              <ol><li name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(points:IndexedSeq[TGeoPoint],searchRadius:Double):com.github.tsingjyujing.geo.element.immutable.GeoFastLineString[TGeoPoint]"></a>
+      <a id="&lt;init&gt;:GeoFastLineString[TGeoPoint]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">FetchResult</span><span class="params">(<span name="offsetStart">offsetStart: <span class="extype" name="scala.Int">Int</span></span>, <span name="offsetEnd">offsetEnd: <span class="extype" name="scala.Int">Int</span></span>, <span name="distance">distance: <span class="extype" name="scala.Double">Double</span></span>)</span>
+        <span class="name">GeoFastLineString</span><span class="params">(<span name="points">points: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString.TGeoPoint">TGeoPoint</span>]</span>, <span name="searchRadius">searchRadius: <span class="extype" name="scala.Double">Double</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@&lt;init&gt;(offsetStart:Int,offsetEnd:Int,distance:Double):GeoLineString.this.FetchResult" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@&lt;init&gt;(points:IndexedSeq[TGeoPoint],searchRadius:Double):com.github.tsingjyujing.geo.element.immutable.GeoFastLineString[TGeoPoint]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">offsetStart</dt><dd class="cmt"><p>start point index</p></dd><dt class="param">offsetEnd</dt><dd class="cmt"><p>end point index</p></dd><dt class="param">distance</dt><dd class="cmt"><p>distance to line</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">points</dt><dd class="cmt"><p>points which contribute line string</p></dd><dt class="param">searchRadius</dt><dd class="cmt"><p>radius to search</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -127,7 +127,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -144,7 +144,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@##():Int" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@##():Int" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -161,7 +161,7 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -178,7 +178,7 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -195,7 +195,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@clone():Object" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -208,23 +208,25 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult#distance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="distance:Double"></a>
-      <a id="distance:Double"></a>
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString#contains" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="contains(x:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean"></a>
+      <a id="contains(IGeoPoint):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">distance</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">contains</span><span class="params">(<span name="x">x: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@distance:Double" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@contains(x:com.github.tsingjyujing.geo.basic.IGeoPoint):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">distance to line</p>
+      <p class="shortcomment cmt">Is x contains in self
+</p><div class="fullcomment"><div class="comment cmt"><p>Is x contains in self
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString">GeoFastLineString</a> → <a href="../../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -237,11 +239,30 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString#geoTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="geoTo(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Double"></a>
+      <a id="geoTo(IGeoPoint):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">geoTo</span><span class="params">(<span name="point">point: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@geoTo(point:com.github.tsingjyujing.geo.basic.IGeoPoint):Double" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get distance from this to point or point to this (should be same)
+</p><div class="fullcomment"><div class="comment cmt"><p>Get distance from this to point or point to this (should be same)
+</p></div><dl class="paramcmts block"><dt class="param">point</dt><dd class="cmt"><p>geo point</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString">GeoFastLineString</a> → <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -254,7 +275,7 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -262,60 +283,6 @@
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult#getEndPoint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getEndPoint:com.github.tsingjyujing.geo.basic.IGeoPoint"></a>
-      <a id="getEndPoint:IGeoPoint"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getEndPoint</span><span class="result">: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@getEndPoint:com.github.tsingjyujing.geo.basic.IGeoPoint" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Get line end point
-</p>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult#getLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getLine:com.github.tsingjyujing.geo.element.immutable.GeoLine[TGeoPoint]"></a>
-      <a id="getLine:GeoLine[TGeoPoint]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getLine</span><span class="result">: <a href="GeoLine.html" class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoLine">GeoLine</a>[<span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.TGeoPoint">TGeoPoint</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@getLine:com.github.tsingjyujing.geo.element.immutable.GeoLine[TGeoPoint]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Get fetched line
-</p>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult#getStartPoint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getStartPoint:com.github.tsingjyujing.geo.basic.IGeoPoint"></a>
-      <a id="getStartPoint:IGeoPoint"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getStartPoint</span><span class="result">: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@getStartPoint:com.github.tsingjyujing.geo.basic.IGeoPoint" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Get line start point
-</p>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -328,7 +295,7 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -345,11 +312,30 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.operations.IContains#nonContains" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nonContains(x:T):Boolean"></a>
+      <a id="nonContains(IGeoPoint):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nonContains</span><span class="params">(<span name="x">x: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@nonContains(x:T):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">NOT contains
+</p><div class="fullcomment"><div class="comment cmt"><p>NOT contains
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a></dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -362,7 +348,7 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -382,7 +368,7 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -390,40 +376,40 @@
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult#offsetEnd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="offsetEnd:Int"></a>
-      <a id="offsetEnd:Int"></a>
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString#points" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="points:IndexedSeq[TGeoPoint]"></a>
+      <a id="points:IndexedSeq[TGeoPoint]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">offsetEnd</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">points</span><span class="result">: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<span class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString.TGeoPoint">TGeoPoint</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@offsetEnd:Int" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@points:IndexedSeq[TGeoPoint]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">end point index</p>
-    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoLineString.FetchResult#offsetStart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="offsetStart:Int"></a>
-      <a id="offsetStart:Int"></a>
+      <p class="shortcomment cmt">points which contribute line string</p>
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString#searchRadius" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="searchRadius:Double"></a>
+      <a id="searchRadius:Double"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">offsetStart</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">searchRadius</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@offsetStart:Int" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@searchRadius:Double" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">start point index</p>
+      <p class="shortcomment cmt">radius to search</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -436,11 +422,49 @@
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString#toGeoJSON" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toGeoJSON:scala.util.parsing.json.JSONObject"></a>
+      <a id="toGeoJSON:JSONObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGeoJSON</span><span class="result">: <span class="extype" name="scala.util.parsing.json.JSONObject">JSONObject</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@toGeoJSON:scala.util.parsing.json.JSONObject" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get scala original JSON object,
+JSON object deprecated in Scala 2.12 but still using in 2.10
+</p><div class="fullcomment"><div class="comment cmt"><p>Get scala original JSON object,
+JSON object deprecated in Scala 2.12 but still using in 2.10
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.github.tsingjyujing.geo.element.immutable.GeoFastLineString">GeoFastLineString</a> → <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable#toGeoJSONString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toGeoJSONString:String"></a>
+      <a id="toGeoJSONString:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGeoJSONString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@toGeoJSONString:String" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
@@ -453,7 +477,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -476,7 +500,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -499,7 +523,7 @@
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -510,6 +534,25 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable#~&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="~&gt;(point:T):Double"></a>
+      <a id="~&gt;(IGeoPoint):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $tilde$greater" class="name">~&gt;</span><span class="params">(<span name="point">point: <a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@~&gt;(point:T):Double" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Alias of geoTo
+</p><div class="fullcomment"><div class="comment cmt"><p>Alias of geoTo
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -529,7 +572,7 @@
         <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoLineString$FetchResult@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#com.github.tsingjyujing.geo.element.immutable.GeoFastLineString@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -557,6 +600,12 @@
               <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
             </div><div class="parent" name="scala.Equals">
               <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.github.tsingjyujing.geo.basic.operations.IContains">
+              <h3>Inherited from <a href="../../basic/operations/IContains.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.IContains">IContains</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>]</h3>
+            </div><div class="parent" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">
+              <h3>Inherited from <a href="../../basic/operations/GeoJSONable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoJSONable">GeoJSONable</a></h3>
+            </div><div class="parent" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">
+              <h3>Inherited from <a href="../../basic/operations/GeoDistanceMeasurable.html" class="extype" name="com.github.tsingjyujing.geo.basic.operations.GeoDistanceMeasurable">GeoDistanceMeasurable</a>[<a href="../../basic/IGeoPoint.html" class="extype" name="com.github.tsingjyujing.geo.basic.IGeoPoint">IGeoPoint</a>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
