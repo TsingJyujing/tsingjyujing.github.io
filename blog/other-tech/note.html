@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>技术杂文 · GitBook</title>
+        <title>备忘录 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -77,10 +77,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="https.html" />
+    <link rel="next" href="../spam/" />
     
     
-    <link rel="prev" href="../game201/sph.html" />
+    <link rel="prev" href="cloud-or-not.html" />
     
 
     </head>
@@ -321,7 +321,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="./">
             
                 <a href="./">
             
@@ -413,7 +413,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.7" data-path="note.html">
+        <li class="chapter active" data-level="1.4.7" data-path="note.html">
             
                 <a href="note.html">
             
@@ -532,7 +532,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >技术杂文</a>
+        <a href=".." >备忘录</a>
     </h1>
 </div>
 
@@ -547,7 +547,74 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x6280;&#x672F;&#x6742;&#x6587;">&#x6280;&#x672F;&#x6742;&#x6587;</h1>
+                                <h2 id="&#x6279;&#x91CF;&#x6740;&#x7EBF;&#x7A0B;">&#x6279;&#x91CF;&#x6740;&#x7EBF;&#x7A0B;</h2>
+<pre><code>#!/bin/bash
+ps -ef|grep $1|grep -v grep|awk &apos;{print $2}&apos;|xargs -r kill -9
+</code></pre><h2 id="mongodb-&#x6743;&#x9650;&#x914D;&#x7F6E;">MongoDB &#x6743;&#x9650;&#x914D;&#x7F6E;</h2>
+<h3 id="&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x914D;&#x7F6E;">&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x914D;&#x7F6E;</h3>
+<pre><code class="lang-javascript">db.createUser({user:&quot;dbadmin&quot;,pwd:&quot;979323846&quot;,roles: [{ role:&quot;root&quot;, db:&quot;admin&quot;}]})
+</code></pre>
+<h3 id="&#x7528;&#x6237;&#x914D;&#x7F6E;&#x6837;&#x4F8B;">&#x7528;&#x6237;&#x914D;&#x7F6E;&#x6837;&#x4F8B;</h3>
+<pre><code class="lang-javascript">db.createUser({ 
+    user: &quot;basicdata_write&quot;,
+    pwd: &quot;basicdata_write&quot;,
+    roles:[
+        { role: &quot;readWrite&quot;, db: &quot;basicdata&quot; }
+    ]
+})
+</code></pre>
+<h2 id="mongodb-&#x6162;&#x67E5;&#x8BE2;&#x76F8;&#x5173;">MongoDB &#x6162;&#x67E5;&#x8BE2;&#x76F8;&#x5173;</h2>
+<h3 id="&#x67E5;&#x627E;&#x5F53;&#x524D;&#x5927;&#x4E8E;100&#x79D2;&#x7684;&#x3001;&#x4E14;&#x6700;&#x6162;&#x7684;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x7684;&#x8BE6;&#x60C5;">&#x67E5;&#x627E;&#x5F53;&#x524D;&#x5927;&#x4E8E;10.0&#x79D2;&#x7684;&#x3001;&#x4E14;&#x6700;&#x6162;&#x7684;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x7684;&#x8BE6;&#x60C5;</h3>
+<pre><code class="lang-bash">mongo --quiet --eval &quot;let limit_time = 10.0;&quot; slow_query.js
+</code></pre>
+<h3 id="&#x7EDF;&#x8BA1;&#x5927;&#x4E8E;10&#x79D2;&#x7684;&#x6162;&#x67E5;&#x6570;&#x91CF;">&#x7EDF;&#x8BA1;&#x5927;&#x4E8E;10&#x79D2;&#x7684;&#x6162;&#x67E5;&#x6570;&#x91CF;</h3>
+<pre><code class="lang-bash">mongo --quiet --eval &quot;db.currentOp().inprog.filter(x=&gt;x[&apos;secs_running&apos;]&gt;10).length&quot;
+</code></pre>
+<p>&#x4E00;&#x822C;&#x7EDF;&#x8BA1;&#x5927;&#x4E8E;5&#x79D2;&#xFF0C;15&#x79D2;&#xFF0C;30&#x79D2;,60&#x79D2;&#xFF0C;300&#x79D2;&#x7684;&#x6162;&#x67E5;&#x6570;&#x91CF;&#x3002;</p>
+<h3 id="&#x67E5;&#x8BE2;running&#x603B;&#x65F6;&#x95F4;">&#x67E5;&#x8BE2;Running&#x603B;&#x65F6;&#x95F4;</h3>
+<p>&#x8FD9;&#x4E2A;&#x6307;&#x6807;&#x53EF;&#x4EE5;&#x4ECE;&#x4FA7;&#x9762;&#x53CD;&#x5E94;&#x6570;&#x636E;&#x5E93;&#x7684;&#x64CD;&#x4F5C;&#x4F53;&#x9A8C;&#x548C;&#x538B;&#x529B;&#x3002;</p>
+<pre><code class="lang-bash">mongo --quiet --eval &quot;db.currentOp().inprog.map(x=&gt;x.microsecs_running/1000000.0).reduce((a,b)=&gt;a+b)&quot;
+</code></pre>
+<pre><code class="lang-javascript">// &#x68C0;&#x67E5;&#x5927;&#x4E8E; limit_time &#x79D2;&#x7684;&#x6162;&#x67E5;&#x8BE2;&#x6570;&#x636E;
+// let limit_time = 10.0;
+// &#x4E0A;&#x4E00;&#x53E5;&#x5728;eval&#x91CC;&#x9762;&#x6267;&#x884C;&#x6765;&#x8FBE;&#x5230;&#x52A8;&#x6001;&#x8BBE;&#x7F6E;&#x7684;&#x6548;&#x679C;
+db.currentOp().inprog.filter(
+    x=&gt;x[&quot;microsecs_running&quot;]&gt;(limit_time*1000000)
+).sort(
+    // &#x53D6;&#x6700;&#x6162;&#x7684;&#x4E00;&#x6761;&#x8FDB;&#x884C;&#x5C55;&#x793A;
+    (a,b)=&gt;{
+        const va = a[&quot;microsecs_running&quot;];
+        const vb = b[&quot;microsecs_running&quot;];
+        if(a==b){
+            return 0;
+        }else{
+            if(a&gt;b){
+                return -1;
+            }else{
+                return 1;
+            }
+        }
+    }
+)
+</code></pre>
+<h3 id="&#x6740;&#x6B7B;&#x8D85;&#x65F6;&#x4EFB;&#x52A1;">&#x6740;&#x6B7B;&#x8D85;&#x65F6;&#x4EFB;&#x52A1;</h3>
+<pre><code class="lang-javascript">let over_time = 60.0;// Over 1 min
+db.currentOp().inprog.forEach(
+    opInfo=&gt;{
+        try{
+            const opId = opInfo[&quot;opid&quot;];
+            const opDuration = opInfo[&quot;secs_running&quot;];
+            if(opDuration&gt;over_time){
+                db.killOp(opId);
+                console.log(`Operation ${opId} killed, details: ${JSON.stringify(opInfo)}`)
+            }
+        }catch(err){
+            console.error(&quot;Error while executing killing filter.&quot;)
+            console.error(err)
+        }
+    }
+)
+</code></pre>
 
                                 
                                 </section>
@@ -575,12 +642,12 @@
 
             
                 
-                <a href="../game201/sph.html" class="navigation navigation-prev " aria-label="Previous page: 光滑粒子法">
+                <a href="cloud-or-not.html" class="navigation navigation-prev " aria-label="Previous page: 为什么我劝你不要使用云计算？">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="https.html" class="navigation navigation-next " aria-label="Next page: Let's encrypt -- 让我们一起愉快的使用HTTPS">
+                <a href="../spam/" class="navigation navigation-next " aria-label="Next page: 政治不正确">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -591,7 +658,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"技术杂文","level":"1.4","depth":1,"next":{"title":"Let's encrypt -- 让我们一起愉快的使用HTTPS","level":"1.4.1","depth":2,"path":"other-tech/https.md","ref":"other-tech/https.md","articles":[]},"previous":{"title":"光滑粒子法","level":"1.3.2","depth":2,"path":"game201/sph.md","ref":"game201/sph.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","katex","alerts","emphasize","-highlight","localized-footer","mermaid-gb3","ga"],"pluginsConfig":{"chapter-fold":{},"emphasize":{},"search":{},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"alerts":{},"ga":{"configuration":"auto","token":"UA-153583635-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"other-tech/README.md","mtime":"2020-07-24T08:04:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T08:09:57.568Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"备忘录","level":"1.4.7","depth":2,"next":{"title":"政治不正确","level":"1.5","depth":1,"path":"spam/README.md","ref":"spam/README.md","articles":[{"title":"华为251事件记忆","level":"1.5.1","depth":2,"path":"spam/huawei-251.md","ref":"spam/huawei-251.md","articles":[]},{"title":"互不联网公司是如何强奸用户的(持续更新)","level":"1.5.2","depth":2,"path":"spam/rape-user.md","ref":"spam/rape-user.md","articles":[]},{"title":"访谈：为什么毛泽东时代工人的积极性很高？","level":"1.5.3","depth":2,"path":"spam/workers-interview.md","ref":"spam/workers-interview.md","articles":[]},{"title":"杂谈","level":"1.5.4","depth":2,"path":"spam/zatsudan.md","ref":"spam/zatsudan.md","articles":[]}]},"previous":{"title":"为什么我劝你不要使用云计算？","level":"1.4.6","depth":2,"path":"other-tech/cloud-or-not.md","ref":"other-tech/cloud-or-not.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","katex","alerts","emphasize","-highlight","localized-footer","mermaid-gb3","ga"],"pluginsConfig":{"chapter-fold":{},"emphasize":{},"search":{},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"alerts":{},"ga":{"configuration":"auto","token":"UA-153583635-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"other-tech/note.md","mtime":"2020-07-24T08:04:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T08:09:57.568Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
