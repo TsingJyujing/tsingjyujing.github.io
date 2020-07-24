@@ -34,7 +34,15 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
                 
             
                 
@@ -561,72 +569,72 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="&#x6279;&#x91CF;&#x6740;&#x7EBF;&#x7A0B;">&#x6279;&#x91CF;&#x6740;&#x7EBF;&#x7A0B;</h2>
-<pre><code>#!/bin/bash
+<pre class="language-"><code>#!/bin/bash
 ps -ef|grep $1|grep -v grep|awk &apos;{print $2}&apos;|xargs -r kill -9
 </code></pre><h2 id="mongodb-&#x6743;&#x9650;&#x914D;&#x7F6E;">MongoDB &#x6743;&#x9650;&#x914D;&#x7F6E;</h2>
 <h3 id="&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x914D;&#x7F6E;">&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x914D;&#x7F6E;</h3>
-<pre><code class="lang-javascript">db.createUser({user:&quot;dbadmin&quot;,pwd:&quot;979323846&quot;,roles: [{ role:&quot;root&quot;, db:&quot;admin&quot;}]})
+<pre class="language-"><code class="lang-javascript">db<span class="token punctuation">.</span><span class="token function">createUser</span><span class="token punctuation">(</span><span class="token punctuation">{</span>user<span class="token operator">:</span><span class="token string">&quot;dbadmin&quot;</span><span class="token punctuation">,</span>pwd<span class="token operator">:</span><span class="token string">&quot;979323846&quot;</span><span class="token punctuation">,</span>roles<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> role<span class="token operator">:</span><span class="token string">&quot;root&quot;</span><span class="token punctuation">,</span> db<span class="token operator">:</span><span class="token string">&quot;admin&quot;</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
 <h3 id="&#x7528;&#x6237;&#x914D;&#x7F6E;&#x6837;&#x4F8B;">&#x7528;&#x6237;&#x914D;&#x7F6E;&#x6837;&#x4F8B;</h3>
-<pre><code class="lang-javascript">db.createUser({ 
-    user: &quot;basicdata_write&quot;,
-    pwd: &quot;basicdata_write&quot;,
-    roles:[
-        { role: &quot;readWrite&quot;, db: &quot;basicdata&quot; }
-    ]
-})
+<pre class="language-"><code class="lang-javascript">db<span class="token punctuation">.</span><span class="token function">createUser</span><span class="token punctuation">(</span><span class="token punctuation">{</span> 
+    user<span class="token operator">:</span> <span class="token string">&quot;basicdata_write&quot;</span><span class="token punctuation">,</span>
+    pwd<span class="token operator">:</span> <span class="token string">&quot;basicdata_write&quot;</span><span class="token punctuation">,</span>
+    roles<span class="token operator">:</span><span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> role<span class="token operator">:</span> <span class="token string">&quot;readWrite&quot;</span><span class="token punctuation">,</span> db<span class="token operator">:</span> <span class="token string">&quot;basicdata&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
 <h2 id="mongodb-&#x6162;&#x67E5;&#x8BE2;&#x76F8;&#x5173;">MongoDB &#x6162;&#x67E5;&#x8BE2;&#x76F8;&#x5173;</h2>
 <h3 id="&#x67E5;&#x627E;&#x5F53;&#x524D;&#x5927;&#x4E8E;100&#x79D2;&#x7684;&#x3001;&#x4E14;&#x6700;&#x6162;&#x7684;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x7684;&#x8BE6;&#x60C5;">&#x67E5;&#x627E;&#x5F53;&#x524D;&#x5927;&#x4E8E;10.0&#x79D2;&#x7684;&#x3001;&#x4E14;&#x6700;&#x6162;&#x7684;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x7684;&#x8BE6;&#x60C5;</h3>
-<pre><code class="lang-bash">mongo --quiet --eval &quot;let limit_time = 10.0;&quot; slow_query.js
+<pre class="language-"><code class="lang-bash">mongo --quiet --eval <span class="token string">&quot;let limit_time = 10.0;&quot;</span> slow_query.js
 </code></pre>
 <h3 id="&#x7EDF;&#x8BA1;&#x5927;&#x4E8E;10&#x79D2;&#x7684;&#x6162;&#x67E5;&#x6570;&#x91CF;">&#x7EDF;&#x8BA1;&#x5927;&#x4E8E;10&#x79D2;&#x7684;&#x6162;&#x67E5;&#x6570;&#x91CF;</h3>
-<pre><code class="lang-bash">mongo --quiet --eval &quot;db.currentOp().inprog.filter(x=&gt;x[&apos;secs_running&apos;]&gt;10).length&quot;
+<pre class="language-"><code class="lang-bash">mongo --quiet --eval <span class="token string">&quot;db.currentOp().inprog.filter(x=&gt;x[&apos;secs_running&apos;]&gt;10).length&quot;</span>
 </code></pre>
 <p>&#x4E00;&#x822C;&#x7EDF;&#x8BA1;&#x5927;&#x4E8E;5&#x79D2;&#xFF0C;15&#x79D2;&#xFF0C;30&#x79D2;,60&#x79D2;&#xFF0C;300&#x79D2;&#x7684;&#x6162;&#x67E5;&#x6570;&#x91CF;&#x3002;</p>
 <h3 id="&#x67E5;&#x8BE2;running&#x603B;&#x65F6;&#x95F4;">&#x67E5;&#x8BE2;Running&#x603B;&#x65F6;&#x95F4;</h3>
 <p>&#x8FD9;&#x4E2A;&#x6307;&#x6807;&#x53EF;&#x4EE5;&#x4ECE;&#x4FA7;&#x9762;&#x53CD;&#x5E94;&#x6570;&#x636E;&#x5E93;&#x7684;&#x64CD;&#x4F5C;&#x4F53;&#x9A8C;&#x548C;&#x538B;&#x529B;&#x3002;</p>
-<pre><code class="lang-bash">mongo --quiet --eval &quot;db.currentOp().inprog.map(x=&gt;x.microsecs_running/1000000.0).reduce((a,b)=&gt;a+b)&quot;
+<pre class="language-"><code class="lang-bash">mongo --quiet --eval <span class="token string">&quot;db.currentOp().inprog.map(x=&gt;x.microsecs_running/1000000.0).reduce((a,b)=&gt;a+b)&quot;</span>
 </code></pre>
-<pre><code class="lang-javascript">// &#x68C0;&#x67E5;&#x5927;&#x4E8E; limit_time &#x79D2;&#x7684;&#x6162;&#x67E5;&#x8BE2;&#x6570;&#x636E;
-// let limit_time = 10.0;
-// &#x4E0A;&#x4E00;&#x53E5;&#x5728;eval&#x91CC;&#x9762;&#x6267;&#x884C;&#x6765;&#x8FBE;&#x5230;&#x52A8;&#x6001;&#x8BBE;&#x7F6E;&#x7684;&#x6548;&#x679C;
-db.currentOp().inprog.filter(
-    x=&gt;x[&quot;microsecs_running&quot;]&gt;(limit_time*1000000)
-).sort(
-    // &#x53D6;&#x6700;&#x6162;&#x7684;&#x4E00;&#x6761;&#x8FDB;&#x884C;&#x5C55;&#x793A;
-    (a,b)=&gt;{
-        const va = a[&quot;microsecs_running&quot;];
-        const vb = b[&quot;microsecs_running&quot;];
-        if(a==b){
-            return 0;
-        }else{
-            if(a&gt;b){
-                return -1;
-            }else{
-                return 1;
-            }
-        }
-    }
-)
+<pre class="language-"><code class="lang-javascript"><span class="token comment">// &#x68C0;&#x67E5;&#x5927;&#x4E8E; limit_time &#x79D2;&#x7684;&#x6162;&#x67E5;&#x8BE2;&#x6570;&#x636E;</span>
+<span class="token comment">// let limit_time = 10.0;</span>
+<span class="token comment">// &#x4E0A;&#x4E00;&#x53E5;&#x5728;eval&#x91CC;&#x9762;&#x6267;&#x884C;&#x6765;&#x8FBE;&#x5230;&#x52A8;&#x6001;&#x8BBE;&#x7F6E;&#x7684;&#x6548;&#x679C;</span>
+db<span class="token punctuation">.</span><span class="token function">currentOp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>inprog<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>
+    <span class="token parameter">x</span><span class="token operator">=&gt;</span>x<span class="token punctuation">[</span><span class="token string">&quot;microsecs_running&quot;</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>limit_time<span class="token operator">*</span><span class="token number">1000000</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>
+    <span class="token comment">// &#x53D6;&#x6700;&#x6162;&#x7684;&#x4E00;&#x6761;&#x8FDB;&#x884C;&#x5C55;&#x793A;</span>
+    <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        <span class="token keyword">const</span> va <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token string">&quot;microsecs_running&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> vb <span class="token operator">=</span> b<span class="token punctuation">[</span><span class="token string">&quot;microsecs_running&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">==</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">&gt;</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
 </code></pre>
 <h3 id="&#x6740;&#x6B7B;&#x8D85;&#x65F6;&#x4EFB;&#x52A1;">&#x6740;&#x6B7B;&#x8D85;&#x65F6;&#x4EFB;&#x52A1;</h3>
-<pre><code class="lang-javascript">let over_time = 60.0;// Over 1 min
-db.currentOp().inprog.forEach(
-    opInfo=&gt;{
-        try{
-            const opId = opInfo[&quot;opid&quot;];
-            const opDuration = opInfo[&quot;secs_running&quot;];
-            if(opDuration&gt;over_time){
-                db.killOp(opId);
-                console.log(`Operation ${opId} killed, details: ${JSON.stringify(opInfo)}`)
-            }
-        }catch(err){
-            console.error(&quot;Error while executing killing filter.&quot;)
-            console.error(err)
-        }
-    }
-)
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">let</span> over_time <span class="token operator">=</span> <span class="token number">60.0</span><span class="token punctuation">;</span><span class="token comment">// Over 1 min</span>
+db<span class="token punctuation">.</span><span class="token function">currentOp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>inprog<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>
+    <span class="token parameter">opInfo</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        <span class="token keyword">try</span><span class="token punctuation">{</span>
+            <span class="token keyword">const</span> opId <span class="token operator">=</span> opInfo<span class="token punctuation">[</span><span class="token string">&quot;opid&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">const</span> opDuration <span class="token operator">=</span> opInfo<span class="token punctuation">[</span><span class="token string">&quot;secs_running&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>opDuration<span class="token operator">&gt;</span>over_time<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                db<span class="token punctuation">.</span><span class="token function">killOp</span><span class="token punctuation">(</span>opId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Operation </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>opId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> killed, details: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>opInfo<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">&quot;Error while executing killing filter.&quot;</span><span class="token punctuation">)</span>
+            console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
 </code></pre>
 
                                 
@@ -671,7 +679,7 @@ db.currentOp().inprog.forEach(
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"备忘录","level":"1.4.7","depth":2,"next":{"title":"政治不正确","level":"1.5","depth":1,"path":"spam/README.md","ref":"spam/README.md","articles":[{"title":"华为251事件记忆","level":"1.5.1","depth":2,"path":"spam/huawei-251.md","ref":"spam/huawei-251.md","articles":[]},{"title":"互不联网公司是如何强奸用户的(持续更新)","level":"1.5.2","depth":2,"path":"spam/rape-user.md","ref":"spam/rape-user.md","articles":[]},{"title":"访谈：为什么毛泽东时代工人的积极性很高？","level":"1.5.3","depth":2,"path":"spam/workers-interview.md","ref":"spam/workers-interview.md","articles":[]},{"title":"杂谈","level":"1.5.4","depth":2,"path":"spam/zatsudan.md","ref":"spam/zatsudan.md","articles":[]}]},"previous":{"title":"为什么我劝你不要使用云计算？","level":"1.4.6","depth":2,"path":"other-tech/cloud-or-not.md","ref":"other-tech/cloud-or-not.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","katex","alerts","emphasize","-highlight","localized-footer","mermaid-gb3","ga"],"pluginsConfig":{"chapter-fold":{},"emphasize":{},"search":{},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"alerts":{},"ga":{"configuration":"auto","token":"UA-153583635-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"other-tech/note.md","mtime":"2020-07-24T15:08:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T15:13:06.063Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"备忘录","level":"1.4.7","depth":2,"next":{"title":"政治不正确","level":"1.5","depth":1,"path":"spam/README.md","ref":"spam/README.md","articles":[{"title":"华为251事件记忆","level":"1.5.1","depth":2,"path":"spam/huawei-251.md","ref":"spam/huawei-251.md","articles":[]},{"title":"互不联网公司是如何强奸用户的(持续更新)","level":"1.5.2","depth":2,"path":"spam/rape-user.md","ref":"spam/rape-user.md","articles":[]},{"title":"访谈：为什么毛泽东时代工人的积极性很高？","level":"1.5.3","depth":2,"path":"spam/workers-interview.md","ref":"spam/workers-interview.md","articles":[]},{"title":"杂谈","level":"1.5.4","depth":2,"path":"spam/zatsudan.md","ref":"spam/zatsudan.md","articles":[]}]},"previous":{"title":"为什么我劝你不要使用云计算？","level":"1.4.6","depth":2,"path":"other-tech/cloud-or-not.md","ref":"other-tech/cloud-or-not.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","katex","alerts","emphasize","prism","-highlight","localized-footer","mermaid-gb3","ga","accordion"],"pluginsConfig":{"chapter-fold":{},"prism":{},"emphasize":{},"accordion":{},"search":{},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"alerts":{},"ga":{"configuration":"auto","token":"UA-153583635-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"other-tech/note.md","mtime":"2020-07-24T15:22:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T15:28:23.444Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -699,6 +707,10 @@ db.currentOp().inprog.forEach(
     
         
         <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
         
     
         

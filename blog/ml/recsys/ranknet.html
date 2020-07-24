@@ -34,7 +34,15 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-accordion/accordion.css">
                 
             
                 
@@ -607,22 +615,22 @@ L_{\omega} = - \sum_{i,j \in S}{t_{ij} \times log(sigmoid(s_i-s_j)) + (1-t_{ij})
 L_{\omega} = - \sum_{i,j \in S}{log(sigmoid(s_i-s_j))}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.050005em;"></span><span class="strut bottom" style="height:2.480449em;vertical-align:-1.430444em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">L</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.03588em;">&#x3C9;</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mrel">=</span><span class="mord">&#x2212;</span><span class="mop op-limits"><span class="vlist"><span style="top:1.194336em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">&#x2208;</span><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span></span></span></span><span style="top:-0.000005000000000032756em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathit">s</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">i</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">s</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mbin">&#x2212;</span><span class="mord"><span class="mord mathit">s</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose">)</span><span class="mclose">)</span></span></span></span></span></span></p>
 <h3 id="pytorch&#x7684;&#x5B9E;&#x73B0;">PyTorch&#x7684;&#x5B9E;&#x73B0;</h3>
-<pre><code class="lang-python">import torch.nn
-import torch.nn.functional as F
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn<span class="token punctuation">.</span>functional <span class="token keyword">as</span> F
 
-def ranknet_bce_loss(diff_output: torch.FloatTensor, weight: torch.FloatTensor = None):
-    &quot;&quot;&quot;
+<span class="token keyword">def</span> <span class="token function">ranknet_bce_loss</span><span class="token punctuation">(</span>diff_output<span class="token punctuation">:</span> torch<span class="token punctuation">.</span>FloatTensor<span class="token punctuation">,</span> weight<span class="token punctuation">:</span> torch<span class="token punctuation">.</span>FloatTensor <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
     Calculate the loss of rncf with weight, and reduce by mean()
     We assumed that all the output is positive (1)
     :param diff_output: The value of net(x1)-net(x2)
     :param weight: The weight for each sample
     :return: Loss of ranknet
-    &quot;&quot;&quot;
-    y_loss = -F.logsigmoid(diff_output)
-    if weight is not None:
-        return torch.mul(y_loss, weight).mean()
-    else:
-        return y_loss.mean()
+    &quot;&quot;&quot;</span>
+    y_loss <span class="token operator">=</span> <span class="token operator">-</span>F<span class="token punctuation">.</span>logsigmoid<span class="token punctuation">(</span>diff_output<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> weight <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> torch<span class="token punctuation">.</span>mul<span class="token punctuation">(</span>y_loss<span class="token punctuation">,</span> weight<span class="token punctuation">)</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> y_loss<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
 <h2 id="&#x5982;&#x679C;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x77E9;&#x9635;&#x8BA1;&#x7B97;&#x52A0;&#x901F;">&#x5982;&#x679C;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x77E9;&#x9635;&#x8BA1;&#x7B97;&#x52A0;&#x901F;</h2>
 <p>&#x8003;&#x8651;&#x4E00;&#x4E0B;&#xFF0C;&#x5047;&#x8BBE;&#x67D0;&#x4E2A;&#x7528;&#x6237;&#xFF08;&#x6216;&#x8005;query&#xFF09;&#x6709;N&#x4E2A;item&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8BA1;&#x7B97;&#x9664;&#x4E86;&#x67D0;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x6240;&#x6709;&#x7684;item&#x7684;&#x5206;&#x6570;&#xFF0C;&#x90A3;&#x4E48;Loss&#x7684;&#x8BA1;&#x7B97;&#x5C31;&#x5982;</p>
@@ -637,23 +645,23 @@ L_{\omega} = - \sum_{i=1}^{N}{
 <p>&#x6CE8;&#x610F;&#xFF1A;&#x539F;&#x5219;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;&#x53EA;&#x8981;&#x8BA1;&#x7B97;&#x4E0D;&#x542B;&#x5BF9;&#x89D2;&#x7EBF;&#x7684;&#x4E0B;&#x4E09;&#x89D2;&#x77E9;&#x9635;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;j&#x4ECE;i+1&#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#x3002;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5E94;&#x8BE5;&#x662F;&#x5BF9;&#x79F0;&#x7684;&#x3002;
 &#x4F46;&#x662F;&#x8FD9;&#x91CC;&#x4E3A;&#x4E86;&#x5728;numpy&#x6216;&#x8005;pytorch&#x7B49;&#x6846;&#x67B6;&#x4E0B;&#x77E9;&#x9635;&#x6BD4;&#x5FAA;&#x73AF;&#x5FEB;&#xFF0C;&#x4E14;&#x53EF;&#x8BFB;&#x6027;&#x597D;&#x51FA;&#x53D1;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;j&#x4ECE;1&#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#x3002;</p>
 <h3 id="pytorch&#x7684;&#x5B9E;&#x73B0;">PyTorch&#x7684;&#x5B9E;&#x73B0;</h3>
-<pre><code class="lang-python">import torch.nn
-import torch.nn.functional as F
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn<span class="token punctuation">.</span>functional <span class="token keyword">as</span> F
 
-def ranknet_loss(
-        score_predict: torch.Tensor,
-        score_real: torch.Tensor,
-):
-    &quot;&quot;&quot;
+<span class="token keyword">def</span> <span class="token function">ranknet_loss</span><span class="token punctuation">(</span>
+        score_predict<span class="token punctuation">:</span> torch<span class="token punctuation">.</span>Tensor<span class="token punctuation">,</span>
+        score_real<span class="token punctuation">:</span> torch<span class="token punctuation">.</span>Tensor<span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
     Calculate the loss of ranknet without weight
     :param score_predict: 1xN tensor with model output score
     :param score_real: 1xN tensor with real score
     :return: Loss of ranknet
-    &quot;&quot;&quot;
-    score_diff = torch.sigmoid(score_predict - score_predict.t())
-    tij = (1.0 + torch.sign(score_real - score_real.t())) / 2.0
-    loss_mat = tij * torch.log(score_diff) + (1-tij)*torch.log(1-score_diff)
-    return loss_mat.sum()
+    &quot;&quot;&quot;</span>
+    score_diff <span class="token operator">=</span> torch<span class="token punctuation">.</span>sigmoid<span class="token punctuation">(</span>score_predict <span class="token operator">-</span> score_predict<span class="token punctuation">.</span>t<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    tij <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1.0</span> <span class="token operator">+</span> torch<span class="token punctuation">.</span>sign<span class="token punctuation">(</span>score_real <span class="token operator">-</span> score_real<span class="token punctuation">.</span>t<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2.0</span>
+    loss_mat <span class="token operator">=</span> tij <span class="token operator">*</span> torch<span class="token punctuation">.</span>log<span class="token punctuation">(</span>score_diff<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">-</span>tij<span class="token punctuation">)</span><span class="token operator">*</span>torch<span class="token punctuation">.</span>log<span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">-</span>score_diff<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> loss_mat<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
 <h2 id="&#x5982;&#x679C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;">&#x5982;&#x679C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;</h2>
 <p>&#x8FD9;&#x4E00;&#x6B21;&#x6211;&#x4EEC;&#x4F18;&#x5316;&#x5230;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;&#xFF0C;&#x5BF9;&#xFF0C;&#x5C31;&#x8FDE;Loss&#x6211;&#x4EEC;&#x4E5F;&#x4E0D;&#x8BA1;&#x7B97;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;&#x4F18;&#x5316;&#x3002;
@@ -698,25 +706,25 @@ sigmoid(s_i-s_j)-t_{ij}
 <p>&#x8FD9;&#x91CC;&#x7684;&#x610F;&#x601D;&#x662F;&#xFF0C;&#x628A;&#x6240;&#x6709;&#x7684;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>a</mi><mi>i</mi><msub><mi>r</mi><mrow><mi>a</mi><mi>b</mi></mrow></msub></mrow><annotation encoding="application/x-tex">pair_{ab}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">p</span><span class="mord mathit">a</span><span class="mord mathit">i</span><span class="mord"><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.02778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">a</span><span class="mord mathit mtight">b</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>&#x91CC;&#x9762;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">a=i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.65952em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span><span class="mrel">=</span><span class="mord mathit">i</span></span></span></span>&#x6216;&#x8005;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi><mo>=</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">b=i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span><span class="mrel">=</span><span class="mord mathit">i</span></span></span></span>&#x7684;&#x6311;&#x9009;&#x51FA;&#x6765;&#xFF0C;&#x5982;&#x679C;i&#x5728;&#x524D;&#x9762;&#xFF0C;&#x90A3;&#x5C31;&#x53D6;&#x6B63;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x53D6;&#x8D1F;&#x3002;
 &#x5168;&#x90E8;&#x52A0;&#x8D77;&#x6765;&#x4EE5;&#x540E;&#xFF0C;&#x5C31;&#x662F;&#x5BF9;&#x8FD9;&#x4E00;&#x4E2A;&#x5206;&#x6570;&#x9879;&#x7684;&#x68AF;&#x5EA6;&#x4E86;&#x3002;</p>
 <h3 id="&#x6700;&#x7EC8;&#x7248;&#x672C;&#x7684;pytorch&#x7684;&#x5B9E;&#x73B0;">&#x6700;&#x7EC8;&#x7248;&#x672C;&#x7684;PyTorch&#x7684;&#x5B9E;&#x73B0;</h3>
-<pre><code class="lang-python">import torch.nn
-import torch.nn.functional as F
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn<span class="token punctuation">.</span>functional <span class="token keyword">as</span> F
 
-def ranknet_grad(
-        score_predict: torch.Tensor,
-        score_real: torch.Tensor,
-) -&gt; torch.Tensor:
-    &quot;&quot;&quot;
+<span class="token keyword">def</span> <span class="token function">ranknet_grad</span><span class="token punctuation">(</span>
+        score_predict<span class="token punctuation">:</span> torch<span class="token punctuation">.</span>Tensor<span class="token punctuation">,</span>
+        score_real<span class="token punctuation">:</span> torch<span class="token punctuation">.</span>Tensor<span class="token punctuation">,</span>
+<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> torch<span class="token punctuation">.</span>Tensor<span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
     Get loss from one user&apos;s score output
     :param score_predict: 1xN tensor with model output score
     :param score_real: 1xN tensor with real score
     :return: Gradient of ranknet
-    &quot;&quot;&quot;
-    sigma = 1.0
-    score_predict_diff_mat = score_predict - score_predict.t()
-    score_real_diff_mat = score_real - score_real.t()
-    tij = (1.0 + torch.sign(score_real_diff_mat)) / 2.0
-    lambda_ij = torch.sigmoid(sigma * score_predict_diff_mat) - tij
-    return lambda_ij.sum(dim=1, keepdim=True) - lambda_ij.t().sum(dim=1, keepdim=True)
+    &quot;&quot;&quot;</span>
+    sigma <span class="token operator">=</span> <span class="token number">1.0</span>
+    score_predict_diff_mat <span class="token operator">=</span> score_predict <span class="token operator">-</span> score_predict<span class="token punctuation">.</span>t<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    score_real_diff_mat <span class="token operator">=</span> score_real <span class="token operator">-</span> score_real<span class="token punctuation">.</span>t<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    tij <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1.0</span> <span class="token operator">+</span> torch<span class="token punctuation">.</span>sign<span class="token punctuation">(</span>score_real_diff_mat<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2.0</span>
+    lambda_ij <span class="token operator">=</span> torch<span class="token punctuation">.</span>sigmoid<span class="token punctuation">(</span>sigma <span class="token operator">*</span> score_predict_diff_mat<span class="token punctuation">)</span> <span class="token operator">-</span> tij
+    <span class="token keyword">return</span> lambda_ij<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> keepdim<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span> <span class="token operator">-</span> lambda_ij<span class="token punctuation">.</span>t<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>dim<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> keepdim<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 </code></pre>
 
                                 
@@ -761,7 +769,7 @@ def ranknet_grad(
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Learning To Rank 之 RankNet","level":"1.2.2.1","depth":3,"next":{"title":"收藏夹","level":"1.2.2.2","depth":3,"path":"ml/recsys/collection.md","ref":"ml/recsys/collection.md","articles":[]},"previous":{"title":"推荐系统","level":"1.2.2","depth":2,"path":"ml/recsys/README.md","ref":"ml/recsys/README.md","articles":[{"title":"Learning To Rank 之 RankNet","level":"1.2.2.1","depth":3,"path":"ml/recsys/ranknet.md","ref":"ml/recsys/ranknet.md","articles":[]},{"title":"收藏夹","level":"1.2.2.2","depth":3,"path":"ml/recsys/collection.md","ref":"ml/recsys/collection.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","katex","alerts","emphasize","-highlight","localized-footer","mermaid-gb3","ga"],"pluginsConfig":{"chapter-fold":{},"emphasize":{},"search":{},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"alerts":{},"ga":{"configuration":"auto","token":"UA-153583635-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/recsys/ranknet.md","mtime":"2020-07-24T15:08:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T15:13:06.063Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Learning To Rank 之 RankNet","level":"1.2.2.1","depth":3,"next":{"title":"收藏夹","level":"1.2.2.2","depth":3,"path":"ml/recsys/collection.md","ref":"ml/recsys/collection.md","articles":[]},"previous":{"title":"推荐系统","level":"1.2.2","depth":2,"path":"ml/recsys/README.md","ref":"ml/recsys/README.md","articles":[{"title":"Learning To Rank 之 RankNet","level":"1.2.2.1","depth":3,"path":"ml/recsys/ranknet.md","ref":"ml/recsys/ranknet.md","articles":[]},{"title":"收藏夹","level":"1.2.2.2","depth":3,"path":"ml/recsys/collection.md","ref":"ml/recsys/collection.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","katex","alerts","emphasize","prism","-highlight","localized-footer","mermaid-gb3","ga","accordion"],"pluginsConfig":{"chapter-fold":{},"prism":{},"emphasize":{},"accordion":{},"search":{},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"alerts":{},"ga":{"configuration":"auto","token":"UA-153583635-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/recsys/ranknet.md","mtime":"2020-07-24T15:22:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T15:28:23.444Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -789,6 +797,10 @@ def ranknet_grad(
     
         
         <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
         
     
         

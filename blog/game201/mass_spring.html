@@ -34,7 +34,15 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-accordion/accordion.css">
                 
             
                 
@@ -599,18 +607,18 @@
 <p>&#x6309;&#x7167;&#x9053;&#x7406;&#x8BF4;&#xFF0C;&#x6C42;&#x9006;&#x77E9;&#x9635;&#x662F;&#x6700;&#x597D;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E0D;&#x53EF;&#x63A5;&#x53D7;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x7528;&#x96C5;&#x53EF;&#x6BD4;&#x8FED;&#x4EE3;&#x4E4B;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x66FF;&#x4EE3;&#xFF1A;</p>
 <p><img src="../img/2020-07-19-21-10-42.png" alt=""></p>
 <p>&#x96C5;&#x53EF;&#x6BD4;&#x8FED;&#x4EE3;&#x7684;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#xFF1A;</p>
-<pre><code class="lang-python">@ti.kernel
-def iterate():
-    for i in range(n):
-        r = b[i]
-        for j in range(n):
-            if i != j:
-                r -= A[i, j] * x[j]
+<pre class="language-"><code class="lang-python"><span class="token decorator annotation punctuation">@ti<span class="token punctuation">.</span>kernel</span>
+<span class="token keyword">def</span> <span class="token function">iterate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        r <span class="token operator">=</span> b<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> i <span class="token operator">!=</span> j<span class="token punctuation">:</span>
+                r <span class="token operator">-=</span> A<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j<span class="token punctuation">]</span> <span class="token operator">*</span> x<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
 
-        new_x[i] = r / A[i, i]
+        new_x<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> r <span class="token operator">/</span> A<span class="token punctuation">[</span>i<span class="token punctuation">,</span> i<span class="token punctuation">]</span>
 
-    for i in range(n):
-        x[i] = new_x[i]
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        x<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> new_x<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
 </code></pre>
 <p>&#x4F46;&#x662F;&#x96C5;&#x53EF;&#x6BD4;&#x8FED;&#x4EE3;&#x4F7F;&#x7528;&#x6709;&#x9650;&#x5236;&#xFF0C;&#x53EA;&#x80FD;&#x6536;&#x655B;&#x4E00;&#x4E9B;&#x6027;&#x8D28;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x5BF9;&#x8C31;&#x534A;&#x5F84;&#x6709;&#x4E00;&#x4E9B;&#x8981;&#x6C42;&#x3002;</p>
 <p>&#x4F7F;&#x7528;&#x5171;&#x8F6D;&#x68AF;&#x5EA6;&#x7684;&#x8BDD;&#x5C31;&#x4F1A;&#x66F4;&#x5FEB;&#x4E00;&#x70B9;&#x3002;</p>
@@ -663,7 +671,7 @@ def iterate():
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"弹簧质点系统","level":"1.3.1","depth":2,"next":{"title":"光滑粒子法","level":"1.3.2","depth":2,"path":"game201/sph.md","ref":"game201/sph.md","articles":[]},"previous":{"title":"高级物理引擎实战指南笔记","level":"1.3","depth":1,"path":"game201/README.md","ref":"game201/README.md","articles":[{"title":"弹簧质点系统","level":"1.3.1","depth":2,"path":"game201/mass_spring.md","ref":"game201/mass_spring.md","articles":[]},{"title":"光滑粒子法","level":"1.3.2","depth":2,"path":"game201/sph.md","ref":"game201/sph.md","articles":[]},{"title":"专题：线性方程组求解","level":"1.3.3","depth":2,"path":"game201/linear_eq_solver.md","ref":"game201/linear_eq_solver.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","katex","alerts","emphasize","-highlight","localized-footer","mermaid-gb3","ga"],"pluginsConfig":{"chapter-fold":{},"emphasize":{},"search":{},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"alerts":{},"ga":{"configuration":"auto","token":"UA-153583635-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"game201/mass_spring.md","mtime":"2020-07-24T15:08:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T15:13:06.063Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"弹簧质点系统","level":"1.3.1","depth":2,"next":{"title":"光滑粒子法","level":"1.3.2","depth":2,"path":"game201/sph.md","ref":"game201/sph.md","articles":[]},"previous":{"title":"高级物理引擎实战指南笔记","level":"1.3","depth":1,"path":"game201/README.md","ref":"game201/README.md","articles":[{"title":"弹簧质点系统","level":"1.3.1","depth":2,"path":"game201/mass_spring.md","ref":"game201/mass_spring.md","articles":[]},{"title":"光滑粒子法","level":"1.3.2","depth":2,"path":"game201/sph.md","ref":"game201/sph.md","articles":[]},{"title":"专题：线性方程组求解","level":"1.3.3","depth":2,"path":"game201/linear_eq_solver.md","ref":"game201/linear_eq_solver.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","katex","alerts","emphasize","prism","-highlight","localized-footer","mermaid-gb3","ga","accordion"],"pluginsConfig":{"chapter-fold":{},"prism":{},"emphasize":{},"accordion":{},"search":{},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"alerts":{},"ga":{"configuration":"auto","token":"UA-153583635-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"game201/mass_spring.md","mtime":"2020-07-24T15:22:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T15:28:23.444Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -691,6 +699,10 @@ def iterate():
     
         
         <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
         
     
         
